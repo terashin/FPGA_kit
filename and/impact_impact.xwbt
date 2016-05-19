@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\teramoto_2\Documents\works\FPGA\project\and\impact.xsl
+OUTFILE=C:\Users\teramoto_2\Documents\works\FPGA\project\and\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\teramoto_2\Documents\works\FPGA\project\and
+LICENSE=iMPACT
+USER_INFO=iMPACT

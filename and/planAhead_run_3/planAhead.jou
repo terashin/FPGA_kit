@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Thu May 19 13:57:08 2016
+# Process ID: 9260
+# Log file: C:/Users/teramoto_2/Documents/works/FPGA/project/and/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/teramoto_2/Documents/works/FPGA/project/and/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/teramoto_2/Documents/works/FPGA/project/and/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin M7 [get_ports A]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports B]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports F]
+endgroup
+set_property is_loc_fixed false [get_ports [list  F]]
+save_constraints
+set_property is_loc_fixed true [get_ports [list  F]]
+save_constraints

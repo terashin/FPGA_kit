@@ -1,0 +1,11 @@
+Storage Target: Generic Parallel PROM
+512K   [524288]
+FF
+and
+C:\Users\teramoto_2\Documents\works\FPGA\project\and/
+
+BIN (Swap Bits ON)
+UP
+1
+0
+No

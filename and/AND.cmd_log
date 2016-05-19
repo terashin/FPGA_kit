@@ -1,0 +1,6 @@
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/and/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/and/AND.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/and/AND.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc AND.ucf -p xc3s700a-fg400-4 AND.ngc AND.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/and/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o AND_map.ncd AND.ngd AND.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/and/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 AND_map.ncd AND.ncd AND.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/and/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml AND.twx AND.ncd -o AND.twr AND.pcf -ucf AND.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f AND.ut AND.ncd 
