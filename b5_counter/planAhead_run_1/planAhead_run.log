@@ -1,0 +1,65 @@
+
+****** PlanAhead v14.7
+  **** Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -541 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/pa.fromHdl.tcl
+# create_project -name b5_counter -dir "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/planAhead_run_1" -part xc3s700afg400-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "b5_counter.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {b5_counter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top b5_counter $srcset
+# add_files [list {b5_counter.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s700afg400-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.v" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg400/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg400/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+Parsing UCF File [C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.ucf]
+Finished Parsing UCF File [C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 3166da81
+open_rtl_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 500.184 ; gain = 65.543
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin D1 [get_ports {Q[0]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {Q[1]}]
+endgroup
+startgroup
+set_property package_pin C1 [get_ports {Q[2]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {Q[2]}]]
+set_property is_loc_fixed true [get_ports [list  {Q[2]}]]
+startgroup
+set_property package_pin E11 [get_ports CLK]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue May 24 23:54:43 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead

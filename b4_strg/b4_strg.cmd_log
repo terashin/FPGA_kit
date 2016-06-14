@@ -1,0 +1,7 @@
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/b4_strg.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/b4_strg.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc b4_strg.ucf -p xc3s700a-fg400-4 b4_strg.ngc b4_strg.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o b4_strg_map.ncd b4_strg.ngd b4_strg.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 b4_strg_map.ncd b4_strg.ncd b4_strg.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml b4_strg.twx b4_strg.ncd -o b4_strg.twr b4_strg.pcf -ucf b4_strg.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f b4_strg.ut b4_strg.ncd 
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/b4_strg.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/b4_strg.syr" 

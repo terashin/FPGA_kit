@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            06/09/2016 - 12:31
+SOURCE          C:\Users\teramoto_2\Documents\works\FPGA\project\and\ADDA.bin
+DEVICE          1024K
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0001E802
+START_ADDRESS   0x00000000 END_ADDRESS 0x00053671 DIRECTION_UP   "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/adda.bit" 3s700afg400

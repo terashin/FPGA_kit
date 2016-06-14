@@ -1,0 +1,3 @@
+verilog isim_temp "ADcon.v"
+verilog isim_temp "DAcon.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

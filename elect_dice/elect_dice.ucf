@@ -1,0 +1,15 @@
+
+
+NET "DICE[0]" LOC = Y7;
+NET "DICE[1]" LOC = Y9;
+NET "DICE[2]" LOC = W9;
+NET "DICE[3]" LOC = W10;
+NET "DICE[4]" LOC = Y11;
+NET "DICE[5]" LOC = U9;
+NET "DICE[6]" LOC = R13;
+NET "Q[0]" LOC = D1;
+NET "Q[1]" LOC = E1;
+NET "Q[2]" LOC = C1;
+NET "CLK" LOC = E11;
+NET "RESET" LOC = M7;
+NET "pin" LOC = T14;

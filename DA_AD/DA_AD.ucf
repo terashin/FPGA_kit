@@ -1,0 +1,31 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Light" LOC = T14;
+NET "count11[15]" LOC = Y7;
+NET "count11[14]" LOC = U9;
+NET "count11[13]" LOC = Y9;
+NET "count11[12]" LOC = R13;
+NET "count11[11]" LOC = Y11;
+NET "count11[10]" LOC = W9;
+NET "count11[9]" LOC = W10;
+NET "count11[8]" LOC = T13;
+NET "count11[7]" LOC = D1;
+NET "count11[6]" LOC = E1;
+NET "count11[5]" LOC = C1;
+NET "count11[4]" LOC = D2;
+NET "count11[3]" LOC = B1;
+NET "count11[2]" LOC = C2;
+NET "count11[1]" LOC = D4;
+NET "count11[0]" LOC = D3;
+NET "CLK" LOC = E11;
+NET "CSLD1" LOC = C7;
+NET "CSLD2" LOC = B7;
+NET "CSLD3" LOC = C6;
+NET "SCK1" LOC = A10;
+NET "SCK2" LOC = A18;
+NET "SCK3" LOC = U20;
+NET "SDIN1" LOC = A7;
+NET "SDIN2" LOC = E7;
+NET "SDIN3" LOC = F7;
+NET "SDOUT" LOC = A6;

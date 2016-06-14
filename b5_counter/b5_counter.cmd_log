@@ -1,0 +1,6 @@
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc b5_counter.ucf -p xc3s700a-fg400-4 b5_counter.ngc b5_counter.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o b5_counter_map.ncd b5_counter.ngd b5_counter.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 b5_counter_map.ncd b5_counter.ncd b5_counter.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml b5_counter.twx b5_counter.ncd -o b5_counter.twr b5_counter.pcf -ucf b5_counter.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f b5_counter.ut b5_counter.ncd 

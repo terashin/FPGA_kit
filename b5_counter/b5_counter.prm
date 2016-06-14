@@ -1,0 +1,18 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p bin -c FF -o C:\Users\teramoto_2\Documents\works\FPGA\project\b5_counter//b5_counter -s 2048 -u 0 C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit 
+
+PROM C:\Users\teramoto_2\Documents\works\FPGA\project\b5_counter\b5_counter.prm map: TUE 24 MAY 23:59:14 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Bin
+Size          2048K
+PROM start    00000000
+PROM end      001fffff
+PROM checksum 0002080e
+
+        Addr1        Addr2                     Date File(s)
+     00000000     000a6ce9     May 24 23:58:07 2016 C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit
+                               May 24 23:58:07 2016 C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit

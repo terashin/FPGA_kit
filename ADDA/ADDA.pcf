@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Jun 09 12:21:53 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SCK2" LOCATE = SITE "A10" LEVEL 1;
+COMP "SDOUT" LOCATE = SITE "A6" LEVEL 1;
+COMP "CSLD1" LOCATE = SITE "C6" LEVEL 1;
+COMP "CSLD2" LOCATE = SITE "C7" LEVEL 1;
+COMP "SDIN1" LOCATE = SITE "F7" LEVEL 1;
+COMP "SDIN2" LOCATE = SITE "A7" LEVEL 1;
+COMP "CLK" LOCATE = SITE "E11" LEVEL 1;
+COMP "SCK1" LOCATE = SITE "U20" LEVEL 1;
+SCHEMATIC END;
+

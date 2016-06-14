@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter_sim_isim_beh.exe" -prj "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter_sim_beh.prj" "work.b5_counter_sim" "work.glbl" 

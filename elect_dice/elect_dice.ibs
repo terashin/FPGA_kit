@@ -1,0 +1,2111 @@
+|************************************************************************
+| / 7\'7
+| \ \                           Xilinx Inc.
+| / /
+| \_\/.\               IBIS Models for Spartan-3A  
+|************************************************************************
+|
+[IBIS ver]       3.2
+[File name]      elect_dice.ibs
+[File Rev]       2.3
+[Date]           Wed May 25 03:11:06 2016
+[Source]         HSPICE simulations
+[Notes]          IBIS models for Spartan-3A Platform
+[Disclaimer]
+|                The data in this model is derived from SPICE simulations using
+|                modeling information extracted from the target process. While
+|                a great deal of care has been taken to provide information
+|                that is accurate, this model is considered preliminary as it
+|                has not been verified by actual silicon measurement. Treat the
+|                data in this model as preliminary until actual silicon
+|                verification is performed.
+|
+|                To accurately model package parasitics, please follow the
+|                instructions at:  http://www.xilinx.com/xlnx/
+|                xil_ans_display.jsp?getPagePath=11754
+|
+|                LVDS and LVPECL drivers require the use of external
+|                termination resistors to provide the correct voltage levels.
+|                For more information, refer to the Spartan-3 documentation.
+|
+|                NOTE: This file is compliant with IBIS Version 3.2, but it
+|                may not implement all approved 3.2 features.
+|
+|                NOTE:  Newer versions of the buffer models may be available.
+|                Check the web (http://www.xilinx.com/support/sw_ibis.htm) for
+|                the latest file revision.  However, please be aware that the
+|                web files are not compatible for use with IBISWriter, and
+|                must be manually annotated, should their use be preferred.
+|
+[Copyright]
+| Copyright 2006, Xilinx Inc., All rights reserved
+|
+|************************************************************************
+|                        Component Spartan-3A
+|************************************************************************
+|
+[Component]      Spartan-3A
+[Manufacturer]   Xilinx Inc.
+[Package]
+| For Package Type fg400
+| variable        typ        min        max
+R_pkg            272.32m    152.26m    332.89m
+L_pkg            5.65nH     2.93nH     8.03nH
+C_pkg            1.24pF     0.61pF     2.76pF
+|
+[Pin]  signal_name          model_name           
+|
+Y7       DICE<0>                          LVCMOS25_S_12_TB_25
+Y9       DICE<1>                          LVCMOS25_S_12_TB_25
+W9       DICE<2>                          LVCMOS25_S_12_TB_25
+W10      DICE<3>                          LVCMOS25_S_12_TB_25
+Y11      DICE<4>                          LVCMOS25_S_12_TB_25
+U9       DICE<5>                          LVCMOS25_S_12_TB_25
+D1       Q<0>                             LVCMOS25_S_12_LR_25
+R13      DICE<6>                          LVCMOS25_S_12_TB_25
+E1       Q<1>                             LVCMOS25_S_12_LR_25
+C1       Q<2>                             LVCMOS25_S_12_LR_25
+E11      CLK                              LVCMOS25_S_12_TB_25
+M7       RESET                            LVCMOS25_S_12_TB_25
+F5       TDI                              LVCMOS25_S_12_TB_25
+E4       TMS                              LVCMOS25_S_12_TB_25
+D4       IO_L01P_3                        NC
+D3       IO_L01N_3                        NC
+B1       IO_L02P_3                        NC
+C2       IO_L02N_3                        NC
+D2       IO_L03N_3                        NC
+G7       IP_L04P_3                        NC
+G6       IP_L04N_3/VREF_3                 NC
+F4       IO_L06P_3                        NC
+G5       IO_L06N_3                        NC
+J6       IO_L07P_3                        NC
+J5       IO_L07N_3                        NC
+H7       3                                NC
+H6       IO_L08P_3                        NC
+H4       IO_L08N_3                        NC
+F3       IO_L09P_3                        NC
+G4       IO_L09N_3                        NC
+E3       IO_L10P_3                        NC
+F2       IO_L10N_3                        NC
+J8       IP_L11P_3                        NC
+J7       IP_L11N_3/VREF_3                 NC
+G3       IO_L12P_3                        NC
+H2       IO_L12N_3                        NC
+F1       IO_L13P_3                        NC
+G1       IO_L13N_3/VREF_3                 NC
+J4       IO_L14P_3                        NC
+H3       IO_L14N_3                        NC
+K8       IP_L15P_3                        NC
+K7       IP_L15N_3                        NC
+J3       IO_L16P_3                        NC
+J2       IO_L16N_3                        NC
+J1       LHCLK0                           NC
+K2       LHCLK1                           NC
+K3       LHCLK2                           NC
+L3       IRDY2/LHCLK3                     NC
+K6       IP_L19P_3                        NC
+K5       IP_L19N_3                        NC
+K4       LHCLK4                           NC
+L5       LHCLK5                           NC
+L1       TRDY2/LHCLK6                     NC
+M1       LHCLK7                           NC
+M2       IO_L22P_3/VREF_3                 NC
+M3       IO_L22N_3                        NC
+L7       IP_L23P_3                        NC
+L6       IP_L23N_3                        NC
+M4       IO_L24P_3                        NC
+M5       IO_L24N_3                        NC
+N1       IO_L25P_3                        NC
+N2       IO_L25N_3                        NC
+N3       IO_L26P_3                        NC
+N4       IO_L26N_3                        NC
+M8       IP_L27P_3                        NC
+P1       IO_L28P_3                        NC
+R1       IO_L28N_3                        NC
+P3       IO_L29P_3                        NC
+P4       IO_L29N_3                        NC
+R2       IO_L30P_3                        NC
+R3       IO_L30N_3                        NC
+M6       IP_L31P_3                        NC
+N7       IP_L31N_3                        NC
+T1       IO_L32P_3/VREF_3                 NC
+T2       IO_L32N_3                        NC
+T3       IO_L33P_3                        NC
+R4       IO_L33N_3                        NC
+U1       IO_L34P_3                        NC
+U3       IO_L34N_3                        NC
+P5       IP_L35P_3                        NC
+N6       IP_L35N_3                        NC
+R5       IO_L36P_3                        NC
+T4       IO_L36N_3                        NC
+V1       IO_L37P_3                        NC
+V2       IO_L37N_3                        NC
+W1       IO_L38P_3                        NC
+W2       IO_L38N_3                        NC
+P6       IP_L39P_3                        NC
+P7       IP_L39N_3/VREF_3                 NC
+U4       M1                               LVCMOS25_S_12_TB_25
+V4       M0                               LVCMOS25_S_12_TB_25
+P8       IP_2/VREF_2                      NC
+W3       M2                               LVCMOS25_S_12_TB_25
+Y2       CSO_B                            LVCMOS25_S_12_TB_25
+Y3       IO_L03P_2                        NC
+W4       IO_L03N_2                        NC
+T6       IO_L04P_2                        NC
+R7       IO_L04N_2                        NC
+V5       IO_L05P_2                        NC
+U5       IO_L05N_2                        NC
+T7       IO_L06P_2                        NC
+U6       IO_L06N_2                        NC
+T8       RDWR_B                           LVCMOS25_S_12_TB_25
+U7       VS2                              LVCMOS25_S_12_TB_25
+R8       2                                NC
+Y4       IO_L08P_2                        NC
+Y5       IO_L08N_2                        NC
+V6       VS1                              LVCMOS25_S_12_TB_25
+W6       VS0                              LVCMOS25_S_12_TB_25
+N9       IP_2/VREF_2                      NC
+Y6       IO_L10P_2                        NC
+T9       IO_L11P_2                        NC
+P9       2                                NC
+V7       D7                               LVCMOS25_S_12_TB_25
+W8       D6                               LVCMOS25_S_12_TB_25
+V8       IO_L13P_2                        NC
+V9       IO_L13N_2                        NC
+R10      2                                NC
+U10      D5                               LVCMOS25_S_12_TB_25
+T10      D4                               LVCMOS25_S_12_TB_25
+P10      IP_2/VREF_2                      NC
+V10      GCLK14                           NC
+V11      GCLK1                            NC
+T11      2                                NC
+U11      GCLK2                            NC
+V12      GCLK3                            NC
+T12      IO_L19P_2                        NC
+R12      IO_L19N_2                        NC
+P11      IP_2/VREF_2                      NC
+Y12      IO_L20P_2                        NC
+W12      MOSI/CSI_B                       LVCMOS25_S_12_TB_25
+Y13      IO_L21P_2                        NC
+W13      IO_L21N_2                        NC
+P12      2                                NC
+U13      AWAKE                            NC
+V13      DOUT                             LVCMOS25_S_12_TB_25
+T13      IO_L23P_2                        NC
+N12      IP_2/VREF_2                      NC
+Y14      INIT_B                           LVCMOS25_S_12_TB_25
+W14      D3                               LVCMOS25_S_12_TB_25
+V14      IO_L25P_2                        NC
+T14      IO_L25N_2                        NC
+P13      2                                NC
+Y15      D2                               LVCMOS25_S_12_TB_25
+V15      D1                               LVCMOS25_S_12_TB_25
+U15      IO_L27P_2                        NC
+T15      IO_L27N_2                        NC
+Y16      IO_L28P_2                        NC
+W16      IO_L28N_2                        NC
+V16      IO_L29P_2                        NC
+U16      IO_L29N_2                        NC
+Y17      IO_L30P_2                        NC
+Y18      IO_L30N_2                        NC
+V17      IO_L31P_2                        NC
+U17      IO_L31N_2                        NC
+R14      IP_2/VREF_2                      NC
+W18      D0/DIN/MISO                      LVCMOS25_S_12_TB_25
+Y19      CCLK                             LVCMOS25_S_12_TB_25
+W19      DONE                             LVCMOS25_S_12_TB_25
+R15      SUSPEND                          LVCMOS25_S_12_TB_25
+W20      HDC                              LVCMOS25_S_12_TB_25
+V20      LDC2                             LVCMOS25_S_12_TB_25
+V19      LDC1                             LVCMOS25_S_12_TB_25
+U18      LDC0                             LVCMOS25_S_12_TB_25
+T17      A0                               LVCMOS25_S_12_TB_25
+R16      A1                               LVCMOS25_S_12_TB_25
+P14      IP_L04P_1                        NC
+P15      IP_L04N_1/VREF_1                 NC
+T18      IO_L05P_1                        NC
+T20      IO_L05N_1                        NC
+U19      IO_L06P_1                        NC
+U20      IO_L06N_1                        NC
+P16      IO_L07P_1                        NC
+P17      IO_L07N_1                        NC
+N14      IP_1/VREF_1                      NC
+R18      IO_L08P_1                        NC
+R17      IO_L08N_1                        NC
+R19      IO_L09P_1                        NC
+R20      IO_L09N_1                        NC
+P18      IO_L10P_1                        NC
+P20      IO_L10N_1/VREF_1                 NC
+M16      IP_L11P_1                        NC
+M15      IP_L11N_1/VREF_1                 NC
+N15      A2                               LVCMOS25_S_12_TB_25
+N17      A3                               LVCMOS25_S_12_TB_25
+N18      A4                               LVCMOS25_S_12_TB_25
+N19      A5                               LVCMOS25_S_12_TB_25
+M17      A6                               LVCMOS25_S_12_TB_25
+M18      A7                               LVCMOS25_S_12_TB_25
+M14      IP_L15P_1/VREF_1                 NC
+M13      IP_L15N_1                        NC
+L15      A8                               LVCMOS25_S_12_TB_25
+L16      A9                               LVCMOS25_S_12_TB_25
+M19      RHCLK0                           NC
+M20      RHCLK1                           NC
+L19      RHCLK2                           NC
+L18      TRDY1/RHCLK3                     NC
+L14      IP_L19P_1                        NC
+L13      IP_L19N_1                        NC
+K18      RHCLK4                           NC
+L17      RHCLK5                           NC
+K20      IRDY1/RHCLK6                     NC
+J20      RHCLK7                           NC
+J19      A10                              LVCMOS25_S_12_TB_25
+J18      A11                              LVCMOS25_S_12_TB_25
+K15      IP_L23P_1/VREF_1                 NC
+K14      IP_L23N_1                        NC
+J17      IO_L24P_1                        NC
+K16      IO_L24N_1                        NC
+H19      A12                              LVCMOS25_S_12_TB_25
+H18      A13                              LVCMOS25_S_12_TB_25
+H20      A14                              LVCMOS25_S_12_TB_25
+G20      A15                              LVCMOS25_S_12_TB_25
+J16      IP_L27P_1                        NC
+J15      IP_L27N_1                        NC
+G18      IO_L28P_1                        NC
+H17      IO_L28N_1                        NC
+F20      A16                              LVCMOS25_S_12_TB_25
+F19      A17                              LVCMOS25_S_12_TB_25
+G17      A18                              LVCMOS25_S_12_TB_25
+F18      A19                              LVCMOS25_S_12_TB_25
+J14      IP_L31P_1/VREF_1                 NC
+J13      IP_L31N_1                        NC
+E20      IO_L32P_1                        NC
+E19      IO_L32N_1                        NC
+E18      IO_L33P_1                        NC
+F17      IO_L33N_1                        NC
+D20      IO_L34P_1                        NC
+D18      IO_L34N_1                        NC
+H15      IP_L35P_1                        NC
+H14      IP_L35N_1                        NC
+G16      A20                              LVCMOS25_S_12_TB_25
+F16      A21                              LVCMOS25_S_12_TB_25
+C20      A22                              LVCMOS25_S_12_TB_25
+C19      A23                              LVCMOS25_S_12_TB_25
+B20      A24                              LVCMOS25_S_12_TB_25
+B19      A25                              LVCMOS25_S_12_TB_25
+G15      IP_L39P_1/VREF_1                 NC
+G14      IP_L39N_1                        NC
+E17      TDO                              LVCMOS25_S_12_TB_25
+A19      TCK                              LVCMOS25_S_12_TB_25
+B18      IO_L01P_0                        NC
+A18      IO_L01N_0                        NC
+F14      0                                NC
+D17      IO_L02P_0/VREF_0                 NC
+C17      IO_L02N_0                        NC
+D16      IO_L03P_0                        NC
+E15      IO_L03N_0                        NC
+B17      IO_L04P_0/VREF_0                 NC
+A17      IO_L04N_0                        NC
+C16      IO_L05P_0                        NC
+A16      IO_L05N_0                        NC
+G13      0                                NC
+D15      IO_L06P_0                        NC
+C15      IO_L06N_0                        NC
+C14      IO_L07P_0                        NC
+A14      IO_L07N_0                        NC
+E14      0                                NC
+B15      IO_L08P_0                        NC
+A15      IO_L08N_0                        NC
+E13      IO_L09P_0                        NC
+F13      IO_L09N_0                        NC
+G12      0                                NC
+D14      IO_L10P_0                        NC
+C13      IO_L10N_0/VREF_0                 NC
+B13      IO_L11P_0                        NC
+C12      IO_L11N_0                        NC
+H12      0                                NC
+D12      IO_L12P_0                        NC
+F12      IO_L12N_0                        NC
+B12      IO_L13P_0                        NC
+A12      IO_L13N_0                        NC
+H11      0                                NC
+B11      IO_L14P_0                        NC
+C11      IO_L14N_0                        NC
+D11      GCLK4                            NC
+G11      IP_0/VREF_0                      NC
+A10      GCLK6                            NC
+C10      GCLK7                            NC
+D10      GCLK8                            NC
+E10      GCLK9                            NC
+F11      0                                NC
+A9       GCLK10                           NC
+A8       GCLK11                           NC
+B9       IO_L19P_0                        NC
+C9       IO_L19N_0                        NC
+H10      0                                NC
+B8       IO_L20P_0                        NC
+C8       IO_L20N_0                        NC
+C7       IO_L21P_0                        NC
+D8       IO_L21N_0                        NC
+G10      0                                NC
+E9       IO_L22P_0                        NC
+F9       IO_L22N_0/VREF_0                 NC
+E8       IO_L23P_0                        NC
+F8       IO_L23N_0                        NC
+H9       0                                NC
+B7       IO_L24P_0                        NC
+A7       IO_L24N_0                        NC
+A6       IO_L25P_0                        NC
+C6       IO_L25N_0                        NC
+G9       0                                NC
+A5       IO_L26P_0                        NC
+B5       IO_L26N_0                        NC
+E7       IO_L27P_0                        NC
+F7       IO_L27N_0                        NC
+C5       IO_L28P_0                        NC
+D6       IO_L28N_0                        NC
+A4       IO_L29P_0                        NC
+C4       IO_L29N_0                        NC
+A3       IO_L30P_0                        NC
+B3       IO_L30N_0                        NC
+E6       IO_L31P_0                        NC
+F6       IO_L31N_0                        NC
+G8       0                                NC
+A2       IO_L32P_0/VREF_0                 NC
+B2       PUDC_B                           LVCMOS25_S_12_TB_25
+D5       PROG_B                           LVCMOS25_S_12_TB_25
+A1       GND                              GND
+A11      GND                              GND
+A20      GND                              GND
+B14      GND                              GND
+B6       GND                              GND
+C18      GND                              GND
+C3       GND                              GND
+D9       GND                              GND
+E12      GND                              GND
+E5       GND                              GND
+F15      GND                              GND
+G19      GND                              GND
+G2       GND                              GND
+H13      GND                              GND
+H8       GND                              GND
+J11      GND                              GND
+J9       GND                              GND
+K1       GND                              GND
+K10      GND                              GND
+K12      GND                              GND
+K17      GND                              GND
+L11      GND                              GND
+L20      GND                              GND
+L4       GND                              GND
+L9       GND                              GND
+M10      GND                              GND
+M12      GND                              GND
+N11      GND                              GND
+N13      GND                              GND
+N8       GND                              GND
+P19      GND                              GND
+P2       GND                              GND
+R6       GND                              GND
+R9       GND                              GND
+T16      GND                              GND
+U12      GND                              GND
+V18      GND                              GND
+V3       GND                              GND
+W15      GND                              GND
+W7       GND                              GND
+Y1       GND                              GND
+Y10      GND                              GND
+Y20      GND                              GND
+A13      VCCAUX                           POWER
+E16      VCCAUX                           POWER
+H1       VCCAUX                           POWER
+K13      VCCAUX                           POWER
+L8       VCCAUX                           POWER
+N20      VCCAUX                           POWER
+T5       VCCAUX                           POWER
+Y8       VCCAUX                           POWER
+J10      VCCINT                           POWER
+J12      VCCINT                           POWER
+K11      VCCINT                           POWER
+K9       VCCINT                           POWER
+L10      VCCINT                           POWER
+L12      VCCINT                           POWER
+M11      VCCINT                           POWER
+M9       VCCINT                           POWER
+N10      VCCINT                           POWER
+B10      VCCO_0                           POWER
+B16      VCCO_0                           POWER
+B4       VCCO_0                           POWER
+D13      VCCO_0                           POWER
+D7       VCCO_0                           POWER
+F10      VCCO_0                           POWER
+D19      VCCO_1                           POWER
+H16      VCCO_1                           POWER
+K19      VCCO_1                           POWER
+N16      VCCO_1                           POWER
+T19      VCCO_1                           POWER
+R11      VCCO_2                           POWER
+U14      VCCO_2                           POWER
+U8       VCCO_2                           POWER
+W11      VCCO_2                           POWER
+W17      VCCO_2                           POWER
+W5       VCCO_2                           POWER
+E2       VCCO_3                           POWER
+H5       VCCO_3                           POWER
+L2       VCCO_3                           POWER
+N5       VCCO_3                           POWER
+U2       VCCO_3                           POWER
+|
+|
+|
+|************************************************************************
+|                              Model LVCMOS25_S_12_LR_25
+|************************************************************************
+|
+[Model]  LVCMOS25_S_12_LR_25
+Model_type I/O
+Polarity       Non-Inverting
+Enable        Active-Low
+Vinl =   0.7000V
+Vinh =   1.7000V
+Vmeas =  1.2500V
+Cref =   0.0F
+Rref =   1.0000M
+Vref =   0.0V
+C_comp    6.5640pF          6.1748pF            7.0674pF
+|  
+|  
+[Temperature Range]   27.0000           85.0000             0.0
+[Voltage Range]        2.5000V           2.3000V             2.7000V
+[Pulldown] 
+|Voltage   I(typ)              I(min)              I(max)
+|  
+  -2.50    -159.9195mA         -109.7586mA         -209.8591mA 
+  -2.42    -154.8052mA         -106.2473mA         -203.1496mA 
+  -2.34    -149.6909mA         -102.7360mA         -196.4401mA 
+  -2.26    -144.5765mA         -99.2247mA         -189.7306mA 
+  -2.18    -139.4622mA         -95.7135mA         -183.0210mA 
+  -2.10    -134.3478mA         -92.2022mA         -176.3115mA 
+  -2.02    -129.2335mA         -88.6909mA         -169.6020mA 
+  -1.94    -124.1192mA         -85.1796mA         -162.8925mA 
+  -1.86    -119.0048mA         -81.6683mA         -156.1830mA 
+  -1.78    -113.8905mA         -78.1571mA         -149.4734mA 
+  -1.70    -108.7761mA         -74.6458mA         -142.7639mA 
+  -1.62    -103.6618mA         -71.1345mA         -136.0544mA 
+  -1.54    -98.5475mA         -67.6232mA         -129.3449mA 
+  -1.46    -93.4331mA         -64.1119mA         -122.6354mA 
+  -1.38    -88.3188mA         -60.6007mA         -115.9258mA 
+  -1.30    -83.2044mA         -57.0894mA         -109.2163mA 
+  -1.22    -78.0901mA         -53.5781mA         -102.5068mA 
+  -1.14    -72.9758mA         -50.0668mA         -95.7973mA 
+  -1.06    -67.8614mA         -46.5555mA         -89.0878mA 
+  -0.98    -62.7471mA         -43.0443mA         -82.3782mA 
+  -0.90    -57.6327mA         -39.5330mA         -75.6687mA 
+  -0.82    -52.5184mA         -36.0217mA         -68.9592mA 
+  -0.74    -47.4041mA         -32.5104mA         -62.2497mA 
+  -0.66    -42.2897mA         -28.9991mA         -55.5402mA 
+  -0.58    -37.1754mA         -25.4879mA         -48.8306mA 
+  -0.50    -32.0610mA         -21.9766mA         -42.1211mA 
+  -0.42    -26.9467mA         -18.4653mA         -35.4116mA 
+  -0.34    -22.1445mA         -15.0787mA         -29.2950mA 
+  -0.26    -17.1742mA         -11.6147mA         -22.8529mA 
+  -0.18    -12.0494mA          -8.0952mA         -16.1284mA 
+  -0.10     -6.7869mA          -4.5229mA          -9.1379mA 
+  -0.02     -1.3750mA          -0.9089mA          -1.8640mA 
+  0.06      4.0200mA           2.6520mA           5.4550mA 
+  0.14      9.0200mA           5.9550mA          12.2300mA 
+  0.22     13.6300mA           8.9980mA          18.4600mA 
+  0.30     17.8600mA          11.7900mA          24.1800mA 
+  0.38     21.7300mA          14.3500mA          29.4100mA 
+  0.46     25.2600mA          16.6700mA          34.1900mA 
+  0.54     28.4600mA          18.7700mA          38.5400mA 
+  0.62     31.3500mA          20.6500mA          42.4800mA 
+  0.70     33.9400mA          22.3200mA          46.0300mA 
+  0.78     36.2400mA          23.7900mA          49.1900mA 
+  0.86     38.2600mA          25.0700mA          52.0000mA 
+  0.94     39.9900mA          26.1400mA          54.4200mA 
+  1.02     41.4100mA          27.0200mA          56.4400mA 
+  1.10     42.4900mA          27.7000mA          57.9900mA 
+  1.18     43.2500mA          28.1900mA          59.0700mA 
+  1.26     43.7700mA          28.5600mA          59.7900mA 
+  1.34     44.1500mA          28.8300mA          60.3000mA 
+  1.42     44.4400mA          29.0600mA          60.6700mA 
+  1.50     44.6800mA          29.2400mA          60.9500mA 
+  1.58     44.8700mA          29.4000mA          61.1900mA 
+  1.66     45.0400mA          29.5300mA          61.3900mA 
+  1.74     45.1800mA          29.6600mA          61.5600mA 
+  1.82     45.3200mA          29.7700mA          61.7100mA 
+  1.90     45.4300mA          29.8700mA          61.8500mA 
+  1.98     45.5400mA          29.9600mA          61.9700mA 
+  2.06     45.6400mA          30.0500mA          62.0800mA 
+  2.14     45.7300mA          30.1300mA          62.1900mA 
+  2.22     45.8200mA          30.2100mA          62.2800mA 
+  2.30     45.9000mA          30.2800mA          62.3700mA 
+  2.38     45.9800mA          30.3499mA          62.4600mA 
+  2.46     46.0500mA          30.4100mA          62.5400mA 
+  2.54     46.1200mA          30.4800mA          62.6200mA 
+  2.62     46.1900mA          30.5500mA          62.6900mA 
+  2.70     46.2600mA          30.7000mA          62.7600mA 
+  2.78     46.3300mA          31.1100mA          62.8299mA 
+  2.86     46.4300mA          31.9700mA          62.9000mA 
+  2.94     46.7600mA          33.2600mA          62.9700mA 
+  3.02     47.6700mA          34.8700mA          63.0800mA 
+  3.10     49.2500mA          36.7000mA          63.4600mA 
+  3.18     51.3300mA          38.7200mA          64.5700mA 
+  3.26     53.7800mA          40.8900mA          66.5400mA 
+  3.34     56.5100mA          43.1900mA          69.1500mA 
+  3.42     59.4700mA          45.6100mA          72.2400mA 
+  3.50     62.6300mA          48.1500mA          75.7300mA 
+  3.58     65.9700mA          50.7800mA          79.5600mA 
+  3.66     69.4700mA          53.5000mA          83.6700mA 
+  3.74     73.1200mA          56.3000mA          88.0300mA 
+  3.82     76.9000mA          59.1600mA          92.5900mA 
+  3.90     80.8000mA          62.0900mA          97.3400mA 
+  3.98     84.8100mA          65.0700mA         102.3000mA 
+  4.06     88.9200mA          68.0900mA         107.3000mA 
+  4.14     93.1200mA          71.1600mA         112.6000mA 
+  4.22     97.4000mA          74.2500mA         117.9000mA 
+  4.30    101.8000mA          77.3700mA         123.4000mA 
+  4.38    106.2000mA          80.5100mA         129.0000mA 
+  4.46    110.7000mA          83.6600mA         134.7000mA 
+  4.54    115.2000mA          86.8200mA         140.5000mA 
+  4.62    119.8000mA          89.9800mA         146.4000mA 
+  4.70    124.4000mA          93.1300mA         152.4000mA 
+  4.78    129.1000mA          96.2700mA         158.5000mA 
+  4.86    133.8000mA          99.3900mA         164.6000mA 
+  4.94    138.5000mA         102.5000mA         170.8000mA 
+[Pullup] 
+|Voltage   I(typ)              I(min)              I(max)
+|  
+  -2.44    164.6000mA         113.8000mA         227.9000mA 
+  -2.36    164.6000mA         111.1000mA         227.9000mA 
+  -2.28    164.6000mA         108.0000mA         227.9000mA 
+  -2.20    164.6000mA         107.3000mA         227.9000mA 
+  -2.12    164.6000mA         107.3000mA         223.1000mA 
+  -2.04    163.0000mA         107.3000mA         216.9000mA 
+  -1.96    158.9000mA         107.3000mA         209.9000mA 
+  -1.88    153.8000mA         106.6000mA         202.4000mA 
+  -1.80    148.2000mA         104.3000mA         194.5000mA 
+  -1.72    142.1000mA         100.9000mA         186.3000mA 
+  -1.64    135.8000mA          96.8800mA         177.9000mA 
+  -1.56    129.3000mA          92.5300mA         169.4000mA 
+  -1.48    122.7000mA          87.9400mA         160.7000mA 
+  -1.40    115.9000mA          83.1800mA         151.8000mA 
+  -1.32    109.0000mA          78.2900mA         142.9000mA 
+  -1.24    102.1000mA          73.3100mA         133.9000mA 
+  -1.16     95.0500mA          68.2600mA         124.8000mA 
+  -1.08     88.0000mA          63.1600mA         115.6000mA 
+  -1.00     80.9200mA          58.0400mA         106.4000mA 
+  -0.92     73.8200mA          52.9100mA          97.1000mA 
+  -0.84     66.7100mA          47.7900mA          87.8500mA 
+  -0.76     59.6200mA          42.6900mA          78.6400mA 
+  -0.68     52.5900mA          37.6300mA          69.5100mA 
+  -0.60     45.6800mA          32.6500mA          60.5100mA 
+  -0.52     38.9600mA          27.8000mA          51.6900mA 
+  -0.44     32.5300mA          23.1400mA          43.1700mA 
+  -0.36     26.3600mA          18.6700mA          35.0200mA 
+  -0.28     20.3400mA          14.3300mA          27.1000mA 
+  -0.20     14.4000mA          10.0900mA          19.2600mA 
+  -0.12      8.5520mA           5.9570mA          11.4899mA 
+  -0.04      2.8170mA           1.9500mA           3.8010mA 
+  0.04     -2.7600mA          -1.9020mA          -3.7360mA 
+  0.12     -8.0520mA          -5.5400mA         -10.9200mA 
+  0.20    -13.0400mA          -8.9560mA         -17.7100mA 
+  0.28    -17.7400mA         -12.1500mA         -24.1300mA 
+  0.36    -22.1300mA         -15.1300mA         -30.1800mA 
+  0.44    -26.2400mA         -17.8800mA         -35.8500mA 
+  0.52    -30.0500mA         -20.4200mA         -41.1700mA 
+  0.60    -33.5800mA         -22.7400mA         -46.1200mA 
+  0.68    -36.8200mA         -24.8400mA         -50.7200mA 
+  0.76    -39.7700mA         -26.7300mA         -54.9700mA 
+  0.84    -42.4500mA         -28.4000mA         -58.8800mA 
+  0.92    -44.8400mA         -29.8600mA         -62.4400mA 
+  1.00    -46.9600mA         -31.1100mA         -65.6700mA 
+  1.08    -48.8000mA         -32.1500mA         -68.5600mA 
+  1.16    -50.3600mA         -32.9700mA         -71.1300mA 
+  1.24    -51.6100mA         -33.6300mA         -73.3300mA 
+  1.32    -52.5900mA         -34.1600mA         -75.0900mA 
+  1.40    -53.3800mA         -34.6100mA         -76.4600mA 
+  1.48    -54.0400mA         -34.9900mA         -77.5600mA 
+  1.56    -54.6200mA         -35.3400mA         -78.4800mA 
+  1.64    -55.1200mA         -35.6400mA         -79.2800mA 
+  1.72    -55.5700mA         -35.9200mA         -79.9800mA 
+  1.80    -55.9800mA         -36.1700mA         -80.6100mA 
+  1.88    -56.3500mA         -36.4100mA         -81.1700mA 
+  1.96    -56.7000mA         -36.6300mA         -81.6900mA 
+  2.04    -57.0200mA         -36.8300mA         -82.1700mA 
+  2.12    -57.3200mA         -37.0300mA         -82.6100mA 
+  2.20    -57.6000mA         -37.2100mA         -83.0300mA 
+  2.28    -57.8600mA         -37.3800mA         -83.4200mA 
+  2.36    -58.1200mA         -37.5500mA         -83.7800mA 
+  2.44    -58.3600mA         -37.7097mA         -84.1300mA 
+  2.52    -58.5900mA         -37.8856mA         -84.4600mA 
+  2.60    -58.7999mA         -38.0616mA         -84.7800mA 
+  2.68    -59.0094mA         -38.2375mA         -85.0800mA 
+  2.76    -59.2393mA         -38.4135mA         -85.3600mA 
+  2.84    -59.4692mA         -38.5894mA         -85.6396mA 
+  2.92    -59.6990mA         -38.7653mA         -85.9415mA 
+  3.00    -59.9289mA         -38.9413mA         -86.2434mA 
+  3.08    -60.1588mA         -39.1172mA         -86.5454mA 
+  3.16    -60.3887mA         -39.2932mA         -86.8473mA 
+  3.24    -60.6186mA         -39.4691mA         -87.1492mA 
+  3.32    -60.8484mA         -39.6450mA         -87.4511mA 
+  3.40    -61.0783mA         -39.8210mA         -87.7530mA 
+  3.48    -61.3082mA         -39.9969mA         -88.0550mA 
+  3.56    -61.5381mA         -40.1729mA         -88.3569mA 
+  3.64    -61.7680mA         -40.3488mA         -88.6588mA 
+  3.72    -61.9978mA         -40.5247mA         -88.9607mA 
+  3.80    -62.2277mA         -40.7007mA         -89.2626mA 
+  3.88    -62.4576mA         -40.8766mA         -89.5646mA 
+  3.96    -62.6875mA         -41.0526mA         -89.8665mA 
+  4.04    -62.9174mA         -41.2285mA         -90.1684mA 
+  4.12    -63.1472mA         -41.4044mA         -90.4703mA 
+  4.20    -63.3771mA         -41.5804mA         -90.7722mA 
+  4.28    -63.6070mA         -41.7563mA         -91.0742mA 
+  4.36    -63.8369mA         -41.9323mA         -91.3761mA 
+  4.44    -64.0668mA         -42.1082mA         -91.6780mA 
+  4.52    -64.2966mA         -42.2841mA         -91.9799mA 
+  4.60    -64.5265mA         -42.4601mA         -92.2818mA 
+  4.68    -64.7564mA         -42.6360mA         -92.5838mA 
+  4.76    -64.9863mA         -42.8120mA         -92.8857mA 
+  4.84    -65.2162mA         -42.9879mA         -93.1876mA 
+  4.92    -65.4460mA         -43.1638mA         -93.4895mA 
+  5.00    -65.6759mA         -43.3398mA         -93.7914mA 
+[GND_clamp]
+|Voltage   I(typ)              I(min)              I(max) 
+ | 
+  -2.50    -904.1000mA         -962.6000mA           -1.0204A 
+  -2.44    -871.4000mA         -927.6000mA         -982.9000mA 
+  -2.38    -838.7000mA         -892.5000mA         -945.4000mA 
+  -2.32    -806.0000mA         -857.5000mA         -907.9000mA 
+  -2.26    -773.3000mA         -822.4000mA         -870.5000mA 
+  -2.20    -740.6000mA         -787.4000mA         -833.0000mA 
+  -2.14    -707.9000mA         -752.3000mA         -795.5000mA 
+  -2.08    -675.3000mA         -717.3000mA         -758.0000mA 
+  -2.02    -642.6000mA         -682.2000mA         -720.6000mA 
+  -1.96    -609.9000mA         -647.2000mA         -683.1000mA 
+  -1.90    -577.2000mA         -612.1000mA         -645.6000mA 
+  -1.84    -544.5000mA         -577.1000mA         -608.2000mA 
+  -1.78    -511.8000mA         -542.0000mA         -570.7000mA 
+  -1.72    -479.1000mA         -506.9000mA         -533.2000mA 
+  -1.66    -446.4000mA         -471.9000mA         -495.7000mA 
+  -1.60    -413.7000mA         -436.8000mA         -458.3000mA 
+  -1.54    -381.0000mA         -401.8000mA         -420.8000mA 
+  -1.48    -348.3000mA         -366.7000mA         -383.3000mA 
+  -1.42    -315.6000mA         -331.7000mA         -345.8000mA 
+  -1.36    -282.9000mA         -297.2000mA         -308.4000mA 
+  -1.30    -250.2000mA         -263.0000mA         -270.9000mA 
+  -1.24    -217.6000mA         -228.8000mA         -233.4000mA 
+  -1.18    -184.9000mA         -194.6000mA         -195.9000mA 
+  -1.12    -152.2000mA         -160.4000mA         -158.5000mA 
+  -1.06    -119.5000mA         -126.2000mA         -121.0000mA 
+  -1.00    -94.4000mA         -94.6000mA         -90.7000mA 
+  -0.94    -70.9000mA         -68.0000mA         -62.9000mA 
+  -0.88    -50.2000mA         -46.2000mA         -43.4000mA 
+  -0.82    -32.8000mA         -30.8000mA         -31.5000mA 
+  -0.76    -18.2000mA         -20.7000mA         -24.0000mA 
+  -0.70    -11.0000mA         -15.3000mA         -18.0000mA 
+  -0.64     -7.0000mA          -9.8000mA         -12.5000mA 
+  -0.58     -4.0000mA          -6.3000mA          -8.5000mA 
+  -0.52     -3.0000mA          -4.0000mA          -5.0000mA 
+  -0.46     -1.7000mA          -2.3000mA          -3.0000mA 
+  -0.40     -1.1000mA          -1.0000mA          -1.5000mA 
+  -0.34     -0.6000mA          -0.2000mA          -1.0000mA 
+  -0.28     -0.1000mA            0.0000A          -0.8000mA 
+  -0.22       0.0000A            0.0000A          -0.5000mA 
+  -0.16       0.0000A            0.0000A            0.0000A 
+  -0.10       0.0000A            0.0000A            0.0000A 
+  -0.04       0.0000A            0.0000A            0.0000A 
+  0.02       0.0000A            0.0000A            0.0000A 
+  0.08       0.0000A            0.0000A            0.0000A 
+  0.14       0.0000A            0.0000A            0.0000A 
+  0.20       0.0000A            0.0000A            0.0000A 
+  0.26       0.0000A            0.0000A            0.0000A 
+  0.32       0.0000A            0.0000A            0.0000A 
+  0.38       0.0000A            0.0000A            0.0000A 
+  0.44       0.0000A            0.0000A            0.0000A 
+  0.50       0.0000A            0.0000A            0.0000A 
+  0.56       0.0000A            0.0000A            0.0000A 
+  0.62       0.0000A            0.0000A            0.0000A 
+  0.68       0.0000A            0.0000A            0.0000A 
+  0.74       0.0000A            0.0000A            0.0000A 
+  0.80       0.0000A            0.0000A            0.0000A 
+  0.86       0.0000A            0.0000A            0.0000A 
+  0.92       0.0000A            0.0000A            0.0000A 
+  0.98       0.0000A            0.0000A            0.0000A 
+  1.04       0.0000A            0.0000A            0.0000A 
+  1.10       0.0000A            0.0000A            0.0000A 
+  1.16       0.0000A            0.0000A            0.0000A 
+  1.22       0.0000A            0.0000A            0.0000A 
+  1.28       0.0000A            0.0000A            0.0000A 
+  1.34       0.0000A            0.0000A            0.0000A 
+  1.40       0.0000A            0.0000A            0.0000A 
+  1.46       0.0000A            0.0000A            0.0000A 
+  1.52       0.0000A            0.0000A            0.0000A 
+  1.58       0.0000A            0.0000A            0.0000A 
+  1.64       0.0000A            0.0000A            0.0000A 
+  1.70       0.0000A            0.0000A            0.0000A 
+  1.76       0.0000A            0.0000A            0.0000A 
+  1.82       0.0000A            0.0000A            0.0000A 
+  1.88       0.0000A            0.0000A            0.0000A 
+  1.94       0.0000A            0.0000A            0.0000A 
+  2.00       0.0000A            0.0000A            0.0000A 
+  2.06       0.0000A            0.0000A            0.0000A 
+  2.12       0.0000A            0.0000A            0.0000A 
+  2.18       0.0000A            0.0000A            0.0000A 
+  2.24       0.0000A            0.0000A            0.0000A 
+  2.30       0.0000A            0.0000A            0.0000A 
+  2.36       0.0000A            0.0000A            0.0000A 
+  2.42       0.0000A            0.0000A            0.0000A 
+  2.48       0.0000A            0.0000A            0.0000A 
+|
+[POWER_clamp]
+|Voltage   I(typ)              I(min)              I(max) 
+ | 
+  -2.49       0.0000A            0.0000A            0.0000A 
+  -2.46       0.0000A            0.0000A            0.0000A 
+  -2.43       0.0000A            0.0000A            0.0000A 
+  -2.40       0.0000A            0.0000A            0.0000A 
+  -2.37       0.0000A            0.0000A            0.0000A 
+  -2.34       0.0000A            0.0000A            0.0000A 
+  -2.31       0.0000A            0.0000A            0.0000A 
+  -2.28       0.0000A            0.0000A            0.0000A 
+  -2.25       0.0000A            0.0000A            0.0000A 
+  -2.22       0.0000A            0.0000A            0.0000A 
+  -2.19       0.0000A            0.0000A            0.0000A 
+  -2.16       0.0000A            0.0000A            0.0000A 
+  -2.13       0.0000A            0.0000A            0.0000A 
+  -2.10       0.0000A            0.0000A            0.0000A 
+  -2.07       0.0000A            0.0000A            0.0000A 
+  -2.04       0.0000A            0.0000A            0.0000A 
+  -2.01       0.0000A            0.0000A            0.0000A 
+  -1.98       0.0000A            0.0000A            0.0000A 
+  -1.95       0.0000A            0.0000A            0.0000A 
+  -1.92       0.0000A            0.0000A            0.0000A 
+  -1.89       0.0000A            0.0000A            0.0000A 
+  -1.86       0.0000A            0.0000A            0.0000A 
+  -1.83       0.0000A            0.0000A            0.0000A 
+  -1.80       0.0000A            0.0000A            0.0000A 
+  -1.77       0.0000A            0.0000A            0.0000A 
+  -1.74       0.0000A            0.0000A            0.0000A 
+  -1.71       0.0000A            0.0000A            0.0000A 
+  -1.68       0.0000A            0.0000A            0.0000A 
+  -1.65       0.0000A            0.0000A            0.0000A 
+  -1.62       0.0000A            0.0000A            0.0000A 
+  -1.59       0.0000A            0.0000A            0.0000A 
+  -1.56       0.0000A            0.0000A            0.0000A 
+  -1.53       0.0000A            0.0000A            0.0000A 
+  -1.50       0.0000A            0.0000A            0.0000A 
+  -1.47       0.0000A            0.0000A            0.0000A 
+  -1.44       0.0000A            0.0000A            0.0000A 
+  -1.41       0.0000A            0.0000A            0.0000A 
+  -1.38       0.0000A            0.0000A            0.0000A 
+  -1.35       0.0000A            0.0000A            0.0000A 
+  -1.32       0.0000A            0.0000A            0.0000A 
+  -1.29       0.0000A            0.0000A            0.0000A 
+  -1.26       0.0000A            0.0000A            0.0000A 
+  -1.23       0.0000A            0.0000A            0.0000A 
+  -1.20       0.0000A            0.0000A            0.0000A 
+  -1.17       0.0000A            0.0000A            0.0000A 
+  -1.14       0.0000A            0.0000A            0.0000A 
+  -1.11       0.0000A            0.0000A            0.0000A 
+  -1.08       0.0000A            0.0000A            0.0000A 
+  -1.05       0.0000A            0.0000A            0.0000A 
+  -1.02       0.0000A            0.0000A            0.0000A 
+  -0.99       0.0000A            0.0000A            0.0000A 
+  -0.96       0.0000A            0.0000A            0.0000A 
+  -0.93       0.0000A            0.0000A            0.0000A 
+  -0.90       0.0000A            0.0000A            0.0000A 
+  -0.87       0.0000A            0.0000A            0.0000A 
+  -0.84       0.0000A            0.0000A            0.0000A 
+  -0.81       0.0000A            0.0000A            0.0000A 
+  -0.78       0.0000A            0.0000A            0.0000A 
+  -0.75       0.0000A            0.0000A            0.0000A 
+  -0.72       0.0000A            0.0000A            0.0000A 
+  -0.69       0.0000A            0.0000A            0.0000A 
+  -0.66       0.0000A            0.0000A            0.0000A 
+  -0.63       0.0000A            0.0000A            0.0000A 
+  -0.60       0.0000A            0.0000A            0.0000A 
+  -0.57       0.0000A            0.0000A            0.0000A 
+  -0.54       0.0000A            0.0000A            0.0000A 
+  -0.51       0.0000A            0.0000A            0.0000A 
+  -0.48       0.0000A            0.0000A            0.0000A 
+  -0.45       0.0000A            0.0000A            0.0000A 
+  -0.42       0.0000A            0.0000A            0.0000A 
+  -0.39       0.0000A            0.0000A            0.0000A 
+  -0.36       0.0000A            0.0000A            0.0000A 
+  -0.33       0.0000A            0.0000A            0.0000A 
+  -0.30       0.0000A            0.0000A            0.0000A 
+  -0.27       0.0000A            0.0000A            0.0000A 
+  -0.24       0.0000A            0.0000A            0.0000A 
+  -0.21       0.0000A            0.0000A            0.0000A 
+  -0.18       0.0000A            0.0000A            0.0000A 
+  -0.15       0.0000A            0.0000A            0.0000A 
+  -0.12       0.0000A            0.0000A            0.0000A 
+  -0.09       0.0000A            0.0000A            0.0000A 
+  -0.06       0.0000A            0.0000A            0.0000A 
+  -0.03       0.0000A            0.0000A            0.0000A 
+  0.00       0.0000A            0.0000A            0.0000A 
+|
+[Ramp]  
+dV/dt_r  1.0956/0.5862n      0.8598/0.9979n      1.2900/0.3962n
+dV/dt_f  1.0551/0.7920n      0.7953/1.3342n      1.2559/0.5052n
+R_load = 50.0000
+|  
+[Rising Waveform] 
+R_fixture= 50.0000
+V_fixture= 2.5000
+V_fixture_min= 2.3000
+V_fixture_max= 2.7000
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              0.7414V           0.9733V             0.6069V
+0.10nS            0.7414V           0.9733V             0.6069V
+0.20nS            0.7414V           0.9733V             0.6069V
+0.30nS            0.7414V           0.9733V             0.6069V
+0.40nS            0.7414V           0.9733V             0.6070V
+0.51nS            0.7414V           0.9733V             0.6064V
+0.61nS            0.7415V           0.9733V             0.6037V
+0.71nS            0.7413V           0.9733V             0.6893V
+0.81nS            0.7390V           0.9733V             1.1270V
+0.91nS            0.7422V           0.9733V             1.7290V
+1.01nS            0.8256V           0.9734V             2.2140V
+1.11nS            1.1230V           0.9734V             2.5010V
+1.21nS            1.5460V           0.9733V             2.6080V
+1.31nS            1.8850V           0.9718V             2.6460V
+1.41nS            2.1510V           0.9665V             2.6670V
+1.52nS            2.3190V           0.9768V             2.6760V
+1.62nS            2.4030V           1.0510V             2.6820V
+1.72nS            2.4450V           1.2280V             2.6860V
+1.82nS            2.4670V           1.4750V             2.6880V
+1.92nS            2.4760V           1.6880V             2.6900V
+2.02nS            2.4820V           1.8820V             2.6910V
+2.12nS            2.4850V           2.0280V             2.6920V
+2.22nS            2.4880V           2.1230V             2.6930V
+2.32nS            2.4900V           2.1860V             2.6930V
+2.42nS            2.4910V           2.2250V             2.6940V
+2.53nS            2.4920V           2.2500V             2.6940V
+2.63nS            2.4930V           2.2660V             2.6950V
+2.73nS            2.4940V           2.2750V             2.6950V
+2.83nS            2.4940V           2.2810V             2.6950V
+2.93nS            2.4950V           2.2840V             2.6960V
+3.03nS            2.4950V           2.2870V             2.6960V
+3.13nS            2.4950V           2.2880V             2.6960V
+3.23nS            2.4960V           2.2900V             2.6970V
+3.33nS            2.4960V           2.2910V             2.6970V
+3.43nS            2.4960V           2.2920V             2.6970V
+3.54nS            2.4960V           2.2920V             2.6970V
+3.64nS            2.4960V           2.2930V             2.6970V
+3.74nS            2.4970V           2.2940V             2.6970V
+3.84nS            2.4970V           2.2940V             2.6980V
+3.94nS            2.4970V           2.2940V             2.6980V
+4.04nS            2.4970V           2.2950V             2.6980V
+4.14nS            2.4970V           2.2950V             2.6980V
+4.24nS            2.4970V           2.2950V             2.6980V
+4.34nS            2.4970V           2.2950V             2.6980V
+4.44nS            2.4980V           2.2960V             2.6980V
+4.55nS            2.4980V           2.2960V             2.6980V
+4.65nS            2.4980V           2.2960V             2.6980V
+4.75nS            2.4980V           2.2960V             2.6980V
+4.85nS            2.4980V           2.2960V             2.6980V
+4.95nS            2.4980V           2.2970V             2.6990V
+5.05nS            2.4980V           2.2970V             2.6990V
+5.15nS            2.4980V           2.2970V             2.6990V
+5.25nS            2.4980V           2.2970V             2.6990V
+5.35nS            2.4980V           2.2970V             2.6990V
+5.45nS            2.4980V           2.2970V             2.6990V
+5.56nS            2.4980V           2.2970V             2.6990V
+5.66nS            2.4990V           2.2970V             2.6990V
+5.76nS            2.4990V           2.2970V             2.6990V
+5.86nS            2.4990V           2.2970V             2.6990V
+5.96nS            2.4990V           2.2970V             2.6990V
+6.06nS            2.4990V           2.2980V             2.6990V
+6.16nS            2.4990V           2.2980V             2.6990V
+6.26nS            2.4990V           2.2980V             2.6990V
+6.36nS            2.4990V           2.2980V             2.6990V
+6.46nS            2.4990V           2.2980V             2.6990V
+6.57nS            2.4990V           2.2980V             2.6990V
+6.67nS            2.4990V           2.2980V             2.6990V
+6.77nS            2.4990V           2.2980V             2.6990V
+6.87nS            2.4990V           2.2980V             2.6990V
+6.97nS            2.4990V           2.2980V             2.6990V
+7.07nS            2.4990V           2.2980V             2.6990V
+7.17nS            2.4990V           2.2980V             2.6990V
+7.27nS            2.4990V           2.2980V             2.6990V
+7.37nS            2.4990V           2.2980V             2.6990V
+7.47nS            2.4990V           2.2980V             2.6990V
+7.58nS            2.4990V           2.2980V             2.6990V
+7.68nS            2.4990V           2.2980V             2.6990V
+7.78nS            2.4990V           2.2980V             2.6990V
+7.88nS            2.4990V           2.2980V             2.6990V
+7.98nS            2.4990V           2.2980V             2.6990V
+8.08nS            2.4990V           2.2980V             2.6990V
+8.18nS            2.4990V           2.2980V             2.6990V
+8.28nS            2.4990V           2.2980V             2.6990V
+8.38nS            2.4990V           2.2990V             2.6990V
+8.48nS            2.4990V           2.2990V             2.6990V
+8.59nS            2.4990V           2.2990V             2.6990V
+8.69nS            2.4990V           2.2990V             2.6990V
+8.79nS            2.4990V           2.2990V             2.6990V
+8.89nS            2.4990V           2.2990V             2.6990V
+8.99nS            2.4990V           2.2990V             2.6990V
+9.09nS            2.4990V           2.2990V             2.6990V
+9.19nS            2.4990V           2.2990V             2.6990V
+9.29nS            2.4990V           2.2990V             2.6990V
+9.39nS            2.4990V           2.2990V             2.6990V
+9.49nS            2.4990V           2.2990V             2.6990V
+9.60nS            2.4990V           2.2990V             2.6990V
+9.70nS            2.4990V           2.2990V             2.6990V
+9.80nS            2.4990V           2.2990V             2.6990V
+9.90nS            2.4990V           2.2990V             2.6990V
+10.00nS           2.4990V           2.2990V             2.6990V
+|  
+[Rising Waveform] 
+R_fixture= 50.0000
+V_fixture= 0.0
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              0.0V              0.0V                0.0V
+0.10nS            0.0V              0.0V                0.0V
+0.20nS            0.0V              0.0V                0.0V
+0.30nS            0.5917uV          0.0V                -4.1530uV
+0.40nS            -0.2541uV         0.0V                -4.0780uV
+0.51nS            -3.0890uV         0.0V                0.2153mV
+0.61nS            -6.9890uV         0.0V                -2.3910mV
+0.71nS            32.5300uV         0.0V                -13.5900mV
+0.81nS            0.2784mV          -0.3510uV           20.1000mV
+0.91nS            -2.3340mV         -1.7840uV           0.1810V
+1.01nS            -10.5100mV        -3.1540uV           0.4999V
+1.11nS            -13.7100mV        -5.4070uV           0.8686V
+1.21nS            21.1400mV         12.6300uV           1.2290V
+1.31nS            0.1354V           0.1489mV            1.5440V
+1.41nS            0.3078V           0.4868mV            1.7810V
+1.52nS            0.5159V           -1.8930mV           1.9160V
+1.62nS            0.7371V           -6.8870mV           1.9900V
+1.72nS            0.9502V           -11.5100mV          2.0320V
+1.82nS            1.1430V           -13.8400mV          2.0610V
+1.92nS            1.3080V           -5.6700mV           2.0790V
+2.02nS            1.4470V           28.5400mV           2.0920V
+2.12nS            1.5470V           97.6100mV           2.1030V
+2.22nS            1.6150V           0.1766V             2.1100V
+2.32nS            1.6610V           0.2697V             2.1150V
+2.42nS            1.6930V           0.3801V             2.1200V
+2.53nS            1.7150V           0.4916V             2.1250V
+2.63nS            1.7330V           0.6018V             2.1290V
+2.73nS            1.7450V           0.7067V             2.1310V
+2.83nS            1.7540V           0.8029V             2.1330V
+2.93nS            1.7630V           0.8917V             2.1350V
+3.03nS            1.7700V           0.9666V             2.1370V
+3.13nS            1.7750V           1.0370V             2.1390V
+3.23nS            1.7790V           1.0930V             2.1400V
+3.33nS            1.7830V           1.1410V             2.1410V
+3.43nS            1.7860V           1.1820V             2.1420V
+3.54nS            1.7900V           1.2190V             2.1430V
+3.64nS            1.7940V           1.2490V             2.1440V
+3.74nS            1.7960V           1.2730V             2.1450V
+3.84nS            1.7980V           1.2930V             2.1460V
+3.94nS            1.8000V           1.3090V             2.1460V
+4.04nS            1.8020V           1.3240V             2.1470V
+4.14nS            1.8040V           1.3350V             2.1470V
+4.24nS            1.8050V           1.3440V             2.1470V
+4.34nS            1.8060V           1.3510V             2.1480V
+4.44nS            1.8080V           1.3590V             2.1480V
+4.55nS            1.8090V           1.3650V             2.1480V
+4.65nS            1.8100V           1.3700V             2.1490V
+4.75nS            1.8110V           1.3740V             2.1490V
+4.85nS            1.8120V           1.3780V             2.1490V
+4.95nS            1.8130V           1.3820V             2.1490V
+5.05nS            1.8145V           1.3875V             2.1490V
+5.15nS            1.8160V           1.3910V             2.1490V
+5.25nS            1.8160V           1.3940V             2.1500V
+5.35nS            1.8170V           1.3960V             2.1500V
+5.45nS            1.8180V           1.3980V             2.1500V
+5.56nS            1.8180V           1.4000V             2.1500V
+5.66nS            1.8190V           1.4020V             2.1500V
+5.76nS            1.8190V           1.4030V             2.1500V
+5.86nS            1.8200V           1.4050V             2.1500V
+5.96nS            1.8200V           1.4060V             2.1500V
+6.06nS            1.8210V           1.4080V             2.1500V
+6.16nS            1.8210V           1.4090V             2.1500V
+6.26nS            1.8210V           1.4110V             2.1500V
+6.36nS            1.8220V           1.4120V             2.1500V
+6.46nS            1.8220V           1.4130V             2.1500V
+6.57nS            1.8220V           1.4140V             2.1500V
+6.67nS            1.8230V           1.4150V             2.1500V
+6.77nS            1.8230V           1.4160V             2.1500V
+6.87nS            1.8230V           1.4170V             2.1500V
+6.97nS            1.8230V           1.4180V             2.1500V
+7.07nS            1.8240V           1.4190V             2.1500V
+7.17nS            1.8240V           1.4200V             2.1500V
+7.27nS            1.8240V           1.4200V             2.1500V
+7.37nS            1.8240V           1.4210V             2.1500V
+7.47nS            1.8240V           1.4220V             2.1500V
+7.58nS            1.8240V           1.4230V             2.1500V
+7.68nS            1.8250V           1.4230V             2.1500V
+7.78nS            1.8250V           1.4240V             2.1500V
+7.88nS            1.8250V           1.4250V             2.1500V
+7.98nS            1.8250V           1.4250V             2.1500V
+8.08nS            1.8250V           1.4260V             2.1500V
+8.18nS            1.8250V           1.4260V             2.1500V
+8.28nS            1.8250V           1.4270V             2.1500V
+8.38nS            1.8250V           1.4270V             2.1500V
+8.48nS            1.8250V           1.4280V             2.1500V
+8.59nS            1.8250V           1.4280V             2.1500V
+8.69nS            1.8250V           1.4290V             2.1500V
+8.79nS            1.8260V           1.4290V             2.1500V
+8.89nS            1.8260V           1.4290V             2.1500V
+8.99nS            1.8260V           1.4300V             2.1500V
+9.09nS            1.8260V           1.4300V             2.1500V
+9.19nS            1.8260V           1.4310V             2.1500V
+9.29nS            1.8260V           1.4310V             2.1500V
+9.39nS            1.8260V           1.4310V             2.1500V
+9.49nS            1.8260V           1.4320V             2.1500V
+9.60nS            1.8260V           1.4320V             2.1500V
+9.70nS            1.8260V           1.4320V             2.1500V
+9.80nS            1.8260V           1.4330V             2.1500V
+9.90nS            1.8260V           1.4330V             2.1500V
+10.00nS           1.8260V           1.4330V             2.1500V
+|  
+[Falling Waveform] 
+R_fixture= 50.0000
+V_fixture= 2.5000
+V_fixture_min= 2.3000
+V_fixture_max= 2.7000
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              2.5000V           2.3000V             2.7000V
+0.10nS            2.5000V           2.3000V             2.7000V
+0.20nS            2.5000V           2.3000V             2.7000V
+0.30nS            2.5000V           2.3000V             2.7000V
+0.40nS            2.5000V           2.3000V             2.6990V
+0.51nS            2.5000V           2.3000V             2.6990V
+0.61nS            2.4990V           2.3000V             2.7020V
+0.71nS            2.4990V           2.3000V             2.7050V
+0.81nS            2.5000V           2.3000V             2.6760V
+0.91nS            2.5050V           2.3000V             2.6070V
+1.01nS            2.5060V           2.2990V             2.4860V
+1.11nS            2.4920V           2.2990V             2.2710V
+1.21nS            2.4570V           2.2990V             1.9730V
+1.31nS            2.3990V           2.3000V             1.6750V
+1.41nS            2.3130V           2.3020V             1.4250V
+1.52nS            2.1760V           2.3060V             1.2030V
+1.62nS            2.0030V           2.3060V             1.0260V
+1.72nS            1.8250V           2.3030V             0.8847V
+1.82nS            1.6600V           2.2910V             0.8013V
+1.92nS            1.5110V           2.2700V             0.7443V
+2.02nS            1.3850V           2.2420V             0.7117V
+2.12nS            1.2770V           2.2000V             0.6882V
+2.22nS            1.1800V           2.1520V             0.6694V
+2.32nS            1.0990V           2.0820V             0.6577V
+2.42nS            1.0270V           1.9980V             0.6486V
+2.53nS            0.9652V           1.9120V             0.6426V
+2.63nS            0.9259V           1.8280V             0.6370V
+2.73nS            0.8865V           1.7520V             0.6314V
+2.83nS            0.8483V           1.6770V             0.6259V
+2.93nS            0.8327V           1.6080V             0.6203V
+3.03nS            0.8195V           1.5470V             0.6182V
+3.13nS            0.8092V           1.4900V             0.6166V
+3.23nS            0.8009V           1.4370V             0.6150V
+3.33nS            0.7926V           1.3900V             0.6134V
+3.43nS            0.7843V           1.3500V             0.6118V
+3.54nS            0.7760V           1.3110V             0.6110V
+3.64nS            0.7706V           1.2730V             0.6104V
+3.74nS            0.7675V           1.2360V             0.6097V
+3.84nS            0.7644V           1.2080V             0.6091V
+3.94nS            0.7613V           1.1840V             0.6084V
+4.04nS            0.7582V           1.1640V             0.6082V
+4.14nS            0.7559V           1.1460V             0.6080V
+4.24nS            0.7543V           1.1280V             0.6079V
+4.34nS            0.7528V           1.1100V             0.6077V
+4.44nS            0.7512V           1.0920V             0.6075V
+4.55nS            0.7497V           1.0790V             0.6074V
+4.65nS            0.7486V           1.0680V             0.6073V
+4.75nS            0.7478V           1.0580V             0.6072V
+4.85nS            0.7471V           1.0470V             0.6072V
+4.95nS            0.7464V           1.0370V             0.6071V
+5.05nS            0.7454V           1.0260V             0.6070V
+5.15nS            0.7448V           1.0180V             0.6070V
+5.25nS            0.7444V           1.0140V             0.6070V
+5.35nS            0.7440V           1.0110V             0.6070V
+5.45nS            0.7437V           1.0070V             0.6070V
+5.56nS            0.7434V           1.0030V             0.6070V
+5.66nS            0.7432V           0.9997V             0.6069V
+5.76nS            0.7430V           0.9977V             0.6069V
+5.86nS            0.7428V           0.9956V             0.6069V
+5.96nS            0.7427V           0.9936V             0.6069V
+6.06nS            0.7425V           0.9915V             0.6069V
+6.16nS            0.7424V           0.9897V             0.6069V
+6.26nS            0.7423V           0.9884V             0.6069V
+6.36nS            0.7422V           0.9872V             0.6069V
+6.46nS            0.7421V           0.9860V             0.6069V
+6.57nS            0.7420V           0.9848V             0.6069V
+6.67nS            0.7420V           0.9837V             0.6069V
+6.77nS            0.7419V           0.9830V             0.6069V
+6.87nS            0.7419V           0.9823V             0.6069V
+6.97nS            0.7418V           0.9816V             0.6069V
+7.07nS            0.7418V           0.9809V             0.6069V
+7.17nS            0.7417V           0.9802V             0.6069V
+7.27nS            0.7417V           0.9798V             0.6069V
+7.37nS            0.7417V           0.9794V             0.6069V
+7.47nS            0.7416V           0.9789V             0.6069V
+7.58nS            0.7416V           0.9785V             0.6069V
+7.68nS            0.7416V           0.9780V             0.6069V
+7.78nS            0.7416V           0.9778V             0.6069V
+7.88nS            0.7416V           0.9775V             0.6069V
+7.98nS            0.7416V           0.9772V             0.6069V
+8.08nS            0.7415V           0.9770V             0.6069V
+8.18nS            0.7415V           0.9767V             0.6069V
+8.28nS            0.7415V           0.9765V             0.6069V
+8.38nS            0.7415V           0.9763V             0.6069V
+8.48nS            0.7415V           0.9761V             0.6069V
+8.59nS            0.7415V           0.9759V             0.6069V
+8.69nS            0.7415V           0.9758V             0.6069V
+8.79nS            0.7415V           0.9756V             0.6069V
+8.89nS            0.7415V           0.9755V             0.6069V
+8.99nS            0.7415V           0.9754V             0.6069V
+9.09nS            0.7415V           0.9752V             0.6069V
+9.19nS            0.7415V           0.9751V             0.6069V
+9.29nS            0.7415V           0.9750V             0.6069V
+9.39nS            0.7415V           0.9749V             0.6069V
+9.49nS            0.7415V           0.9749V             0.6069V
+9.60nS            0.7415V           0.9748V             0.6069V
+9.70nS            0.7415V           0.9747V             0.6069V
+9.80nS            0.7415V           0.9746V             0.6069V
+9.90nS            0.7415V           0.9745V             0.6069V
+10.00nS           0.7415V           0.9745V             0.6069V
+|  
+[Falling Waveform] 
+R_fixture= 50.0000
+V_fixture= 0.0
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              1.8270V           1.4390V             2.1500V
+0.10nS            1.8270V           1.4390V             2.1500V
+0.20nS            1.8270V           1.4390V             2.1500V
+0.30nS            1.8270V           1.4390V             2.1500V
+0.40nS            1.8270V           1.4390V             2.1500V
+0.51nS            1.8270V           1.4390V             2.1520V
+0.61nS            1.8270V           1.4390V             2.1570V
+0.71nS            1.8290V           1.4390V             2.1290V
+0.81nS            1.8360V           1.4390V             2.0030V
+0.91nS            1.8310V           1.4390V             1.6960V
+1.01nS            1.7750V           1.4390V             1.2040V
+1.11nS            1.6540V           1.4410V             0.6615V
+1.21nS            1.4250V           1.4470V             0.2708V
+1.31nS            1.1170V           1.4530V             0.1011V
+1.41nS            0.7769V           1.4500V             46.3900mV
+1.52nS            0.4558V           1.4250V             25.7300mV
+1.62nS            0.2418V           1.3560V             16.9100mV
+1.72nS            0.1157V           1.2650V             12.9500mV
+1.82nS            62.8100mV         1.1240V             10.3900mV
+1.92nS            32.3500mV         0.9588V             8.3340mV
+2.02nS            20.1200mV         0.7791V             6.3570mV
+2.12nS            13.6400mV         0.5941V             4.9170mV
+2.22nS            10.2500mV         0.4171V             3.9540mV
+2.32nS            8.4350mV          0.2722V             3.1370mV
+2.42nS            6.6690mV          0.1598V             2.3200mV
+2.53nS            5.8000mV          94.8100mV           1.8590mV
+2.63nS            5.0750mV          57.1300mV           1.6270mV
+2.73nS            4.5390mV          30.5700mV           1.3950mV
+2.83nS            4.0030mV          21.2800mV           1.1620mV
+2.93nS            3.4670mV          15.8900mV           0.9303mV
+3.03nS            2.9310mV          12.0300mV           0.7814mV
+3.13nS            2.6490mV          9.9910mV            0.6860mV
+3.23nS            2.3750mV          8.4570mV            0.5905mV
+3.33nS            2.1010mV          7.3610mV            0.4950mV
+3.43nS            1.8280mV          6.5380mV            0.3996mV
+3.54nS            1.5540mV          5.9560mV            0.3450mV
+3.64nS            1.4020mV          5.3740mV            0.3166mV
+3.74nS            1.2540mV          4.7910mV            0.2883mV
+3.84nS            1.1070mV          4.3870mV            0.2599mV
+3.94nS            0.9587mV          4.0770mV            0.2316mV
+4.04nS            0.8109mV          3.7660mV            0.2123mV
+4.14nS            0.7335mV          3.4560mV            0.1987mV
+4.24nS            0.6585mV          3.1450mV            0.1851mV
+4.34nS            0.5836mV          2.9140mV            0.1716mV
+4.44nS            0.5086mV          2.7230mV            0.1580mV
+4.55nS            0.4336mV          2.5330mV            0.1478mV
+4.65nS            0.3920mV          2.3420mV            0.1398mV
+4.75nS            0.3515mV          2.1520mV            0.1317mV
+4.85nS            0.3110mV          2.0050mV            0.1237mV
+4.95nS            0.2705mV          1.8800mV            0.1156mV
+5.05nS            0.2191mV          1.6925mV            0.1111mV
+5.15nS            0.1875mV          1.5060mV            0.1092mV
+5.25nS            0.1667mV          1.4060mV            0.1079mV
+5.35nS            0.1458mV          1.3190mV            0.1067mV
+5.45nS            0.1249mV          1.2320mV            0.1033mV
+5.56nS            0.1114mV          1.1460mV            98.6600uV
+5.66nS            98.1000uV         1.0590mV            94.0000uV
+5.76nS            84.8100uV         0.9910mV            89.3400uV
+5.86nS            71.5200uV         0.9326mV            84.6800uV
+5.96nS            58.2400uV         0.8743mV            83.0200uV
+6.06nS            54.1700uV         0.8159mV            83.3000uV
+6.16nS            50.4100uV         0.7575mV            83.5800uV
+6.26nS            46.6600uV         0.7107mV            83.8600uV
+6.36nS            42.9000uV         0.6700mV            84.1400uV
+6.46nS            39.1500uV         0.6293mV            82.3600uV
+6.57nS            34.3300uV         0.5885mV            79.2500uV
+6.67nS            29.4700uV         0.5478mV            76.1500uV
+6.77nS            24.6100uV         0.5142mV            73.0400uV
+6.87nS            19.7500uV         0.4844mV            69.9300uV
+6.97nS            14.8900uV         0.4546mV            69.0300uV
+7.07nS            14.7300uV         0.4248mV            69.5500uV
+7.17nS            14.7400uV         0.3950mV            70.0600uV
+7.27nS            14.7500uV         0.3730mV            70.5800uV
+7.37nS            14.7500uV         0.3551mV            71.0900uV
+7.47nS            14.7600uV         0.3373mV            69.8300uV
+7.58nS            12.2100uV         0.3194mV            67.4200uV
+7.68nS            9.5690uV          0.3015mV            65.0200uV
+7.78nS            6.9290uV          0.2867mV            62.6100uV
+7.88nS            4.2900uV          0.2735mV            60.2000uV
+7.98nS            1.6510uV          0.2603mV            59.5800uV
+8.08nS            2.8000uV          0.2471mV            60.1100uV
+8.18nS            4.0790uV          0.2339mV            60.6300uV
+8.28nS            5.3580uV          0.2223mV            61.1600uV
+8.38nS            6.6370uV          0.2116mV            61.6800uV
+8.48nS            7.9170uV          0.2008mV            60.7000uV
+8.59nS            6.4200uV          0.1901mV            58.7400uV
+8.69nS            4.8280uV          0.1794mV            56.7900uV
+8.79nS            3.2370uV          0.1722mV            54.8400uV
+8.89nS            1.6450uV          0.1669mV            52.8900uV
+8.99nS            52.8700nV         0.1616mV            52.4500uV
+9.09nS            0.7864uV          0.1562mV            52.9800uV
+9.19nS            1.6000uV          0.1509mV            53.5200uV
+9.29nS            2.4130uV          0.1452mV            54.0500uV
+9.39nS            3.2270uV          0.1393mV            54.5900uV
+9.49nS            4.0400uV          0.1335mV            53.8200uV
+9.60nS            3.5040uV          0.1276mV            52.2200uV
+9.70nS            2.9210uV          0.1217mV            50.6200uV
+9.80nS            2.3380uV          0.1190mV            49.0100uV
+9.90nS            1.7550uV          0.1180mV            47.4100uV
+10.00nS           1.1720uV          0.1170mV            58.5600uV
+|  
+|
+| End [Model] LVCMOS25_S_12_LR_25
+|
+|************************************************************************
+|                              Model LVCMOS25_S_12_TB_25
+|************************************************************************
+|
+[Model]  LVCMOS25_S_12_TB_25
+Model_type I/O
+Polarity       Non-Inverting
+Enable        Active-Low
+Vinl =   0.7000V
+Vinh =   1.7000V
+Vmeas =  1.2500V
+Cref =   0.0F
+Rref =   1.0000M
+Vref =   0.0V
+C_comp    6.5640pF          6.1748pF            7.0674pF
+|  
+|  
+[Temperature Range]   27.0000           85.0000             0.0
+[Voltage Range]        2.5000V           2.3000V             2.7000V
+[Pulldown] 
+|Voltage   I(typ)              I(min)              I(max)
+|  
+  -2.50    -159.9195mA         -109.7338mA         -209.8833mA 
+  -2.42    -154.8052mA         -106.2233mA         -203.1730mA 
+  -2.34    -149.6909mA         -102.7128mA         -196.4627mA 
+  -2.26    -144.5765mA         -99.2023mA         -189.7524mA 
+  -2.18    -139.4622mA         -95.6919mA         -183.0421mA 
+  -2.10    -134.3478mA         -92.1814mA         -176.3318mA 
+  -2.02    -129.2335mA         -88.6709mA         -169.6215mA 
+  -1.94    -124.1192mA         -85.1604mA         -162.9112mA 
+  -1.86    -119.0048mA         -81.6499mA         -156.2009mA 
+  -1.78    -113.8905mA         -78.1395mA         -149.4906mA 
+  -1.70    -108.7761mA         -74.6290mA         -142.7803mA 
+  -1.62    -103.6618mA         -71.1185mA         -136.0700mA 
+  -1.54    -98.5475mA         -67.6080mA         -129.3597mA 
+  -1.46    -93.4331mA         -64.0975mA         -122.6494mA 
+  -1.38    -88.3188mA         -60.5871mA         -115.9391mA 
+  -1.30    -83.2044mA         -57.0766mA         -109.2288mA 
+  -1.22    -78.0901mA         -53.5661mA         -102.5185mA 
+  -1.14    -72.9758mA         -50.0556mA         -95.8082mA 
+  -1.06    -67.8614mA         -46.5451mA         -89.0979mA 
+  -0.98    -62.7471mA         -43.0347mA         -82.3876mA 
+  -0.90    -57.6327mA         -39.5242mA         -75.6773mA 
+  -0.82    -52.5184mA         -36.0137mA         -68.9670mA 
+  -0.74    -47.4041mA         -32.5032mA         -62.2567mA 
+  -0.66    -42.2897mA         -28.9927mA         -55.5464mA 
+  -0.58    -37.1754mA         -25.4823mA         -48.8361mA 
+  -0.50    -32.0610mA         -21.9718mA         -42.1258mA 
+  -0.42    -26.9467mA         -18.4613mA         -35.4155mA 
+  -0.34    -22.1517mA         -15.0783mA         -29.3026mA 
+  -0.26    -17.1727mA         -11.6131mA         -22.8493mA 
+  -0.18    -12.0493mA          -8.0960mA         -16.1282mA 
+  -0.10     -6.7869mA          -4.5229mA          -9.1379mA 
+  -0.02     -1.3750mA          -0.9089mA          -1.8640mA 
+  0.06      4.0200mA           2.6520mA           5.4550mA 
+  0.14      9.0200mA           5.9550mA          12.2300mA 
+  0.22     13.6300mA           8.9980mA          18.4600mA 
+  0.30     17.8600mA          11.7900mA          24.1800mA 
+  0.38     21.7300mA          14.3500mA          29.4100mA 
+  0.46     25.2600mA          16.6700mA          34.1900mA 
+  0.54     28.4600mA          18.7700mA          38.5400mA 
+  0.62     31.3500mA          20.6500mA          42.4800mA 
+  0.70     33.9400mA          22.3200mA          46.0300mA 
+  0.78     36.2400mA          23.7900mA          49.1900mA 
+  0.86     38.2600mA          25.0700mA          52.0000mA 
+  0.94     39.9900mA          26.1400mA          54.4200mA 
+  1.02     41.4100mA          27.0200mA          56.4400mA 
+  1.10     42.4900mA          27.7000mA          57.9900mA 
+  1.18     43.2500mA          28.1900mA          59.0700mA 
+  1.26     43.7700mA          28.5600mA          59.7900mA 
+  1.34     44.1500mA          28.8300mA          60.3000mA 
+  1.42     44.4400mA          29.0600mA          60.6700mA 
+  1.50     44.6800mA          29.2400mA          60.9500mA 
+  1.58     44.8700mA          29.4000mA          61.1900mA 
+  1.66     45.0400mA          29.5300mA          61.3900mA 
+  1.74     45.1800mA          29.6600mA          61.5600mA 
+  1.82     45.3200mA          29.7700mA          61.7100mA 
+  1.90     45.4300mA          29.8700mA          61.8500mA 
+  1.98     45.5400mA          29.9600mA          61.9700mA 
+  2.06     45.6400mA          30.0500mA          62.0800mA 
+  2.14     45.7300mA          30.1300mA          62.1900mA 
+  2.22     45.8200mA          30.2100mA          62.2800mA 
+  2.30     45.9000mA          30.2800mA          62.3700mA 
+  2.38     45.9800mA          30.3500mA          62.4600mA 
+  2.46     46.0500mA          30.4100mA          62.5400mA 
+  2.54     46.1200mA          30.4800mA          62.6200mA 
+  2.62     46.1900mA          30.5500mA          62.6900mA 
+  2.70     46.2600mA          30.6700mA          62.7600mA 
+  2.78     46.3200mA          30.9700mA          62.8299mA 
+  2.86     46.4200mA          31.5500mA          62.9000mA 
+  2.94     46.6600mA          32.4000mA          62.9700mA 
+  3.02     47.2800mA          33.4500mA          63.0700mA 
+  3.10     48.3200mA          34.6400mA          63.3400mA 
+  3.18     49.6800mA          35.9400mA          64.0900mA 
+  3.26     51.2700mA          37.3200mA          65.3800mA 
+  3.34     53.0400mA          38.7700mA          67.0900mA 
+  3.42     54.9500mA          40.2800mA          69.1000mA 
+  3.50     56.9800mA          41.8500mA          71.3700mA 
+  3.58     59.1000mA          43.4600mA          73.8400mA 
+  3.66     61.3100mA          45.1200mA          76.4900mA 
+  3.74     63.6000mA          46.8100mA          79.3000mA 
+  3.82     65.9600mA          48.5400mA          82.2300mA 
+  3.90     68.3800mA          50.3000mA          85.2800mA 
+  3.98     70.8700mA          52.0800mA          88.4200mA 
+  4.06     73.4000mA          53.9000mA          91.6500mA 
+  4.14     75.9900mA          55.7300mA          94.9600mA 
+  4.22     78.6200mA          57.5800mA          98.3500mA 
+  4.30     81.2900mA          59.4600mA         101.8000mA 
+  4.38     84.0100mA          61.3400mA         105.4000mA 
+  4.46     86.7700mA          63.2500mA         109.0000mA 
+  4.54     89.5700mA          65.1600mA         112.6000mA 
+  4.62     92.4100mA          67.0900mA         116.4000mA 
+  4.70     95.2800mA          69.0300mA         120.1000mA 
+  4.78     98.1800mA          70.9800mA         124.0000mA 
+  4.86    101.1000mA          72.9500mA         127.9000mA 
+  4.94    104.1000mA          74.9100mA         131.9000mA 
+[Pullup] 
+|Voltage   I(typ)              I(min)              I(max)
+|  
+  -2.44    123.1000mA          80.3300mA         170.3000mA 
+  -2.36    123.1000mA          80.3300mA         170.3000mA 
+  -2.28    123.1000mA          80.3300mA         170.3000mA 
+  -2.20    123.1000mA          80.3300mA         169.2000mA 
+  -2.12    123.1000mA          80.3300mA         166.1000mA 
+  -2.04    121.5000mA          80.3300mA         162.1000mA 
+  -1.96    118.8000mA          80.3300mA         157.6000mA 
+  -1.88    115.6000mA          79.9800mA         152.9000mA 
+  -1.80    111.9000mA          78.3900mA         148.0000mA 
+  -1.72    110.3000mA          76.1700mA         147.2000mA 
+  -1.64    110.3000mA          73.5700mA         146.4000mA 
+  -1.56    108.7000mA          72.5550mA         145.5000mA 
+  -1.48    106.1000mA          72.5550mA         140.2000mA 
+  -1.40    101.9000mA          71.5400mA         134.1000mA 
+  -1.32     97.1100mA          68.8500mA         127.5000mA 
+  -1.24     91.9500mA          65.5000mA         120.6000mA 
+  -1.16     86.5300mA          61.8100mA         113.4000mA 
+  -1.08     80.9100mA          57.8900mA         106.0000mA 
+  -1.00     75.1300mA          53.8000mA          98.3900mA 
+  -0.92     69.2100mA          49.5900mA          90.6600mA 
+  -0.84     63.1700mA          45.2800mA          82.8100mA 
+  -0.76     57.0600mA          40.9000mA          74.8900mA 
+  -0.68     50.8900mA          36.4700mA          66.9100mA 
+  -0.60     44.7100mA          32.0000mA          58.8900mA 
+  -0.52     38.5400mA          27.5200mA          50.8800mA 
+  -0.44     32.4100mA          23.0600mA          42.9000mA 
+  -0.36     26.3400mA          18.6500mA          34.9700mA 
+  -0.28     20.3400mA          14.3300mA          27.1000mA 
+  -0.20     14.4000mA          10.0900mA          19.2600mA 
+  -0.12      8.5520mA           5.9570mA          11.4899mA 
+  -0.04      2.8170mA           1.9500mA           3.8010mA 
+  0.04     -2.7600mA          -1.9020mA          -3.7360mA 
+  0.12     -8.0520mA          -5.5400mA         -10.9200mA 
+  0.20    -13.0400mA          -8.9560mA         -17.7100mA 
+  0.28    -17.7400mA         -12.1500mA         -24.1300mA 
+  0.36    -22.1300mA         -15.1300mA         -30.1800mA 
+  0.44    -26.2400mA         -17.8800mA         -35.8500mA 
+  0.52    -30.0500mA         -20.4200mA         -41.1700mA 
+  0.60    -33.5800mA         -22.7400mA         -46.1200mA 
+  0.68    -36.8200mA         -24.8400mA         -50.7200mA 
+  0.76    -39.7700mA         -26.7300mA         -54.9700mA 
+  0.84    -42.4500mA         -28.4000mA         -58.8800mA 
+  0.92    -44.8400mA         -29.8600mA         -62.4400mA 
+  1.00    -46.9600mA         -31.1100mA         -65.6700mA 
+  1.08    -48.8000mA         -32.1500mA         -68.5600mA 
+  1.16    -50.3600mA         -32.9700mA         -71.1300mA 
+  1.24    -51.6100mA         -33.6300mA         -73.3300mA 
+  1.32    -52.5900mA         -34.1600mA         -75.0900mA 
+  1.40    -53.3800mA         -34.6100mA         -76.4600mA 
+  1.48    -54.0400mA         -34.9900mA         -77.5600mA 
+  1.56    -54.6200mA         -35.3400mA         -78.4800mA 
+  1.64    -55.1200mA         -35.6400mA         -79.2800mA 
+  1.72    -55.5700mA         -35.9200mA         -79.9800mA 
+  1.80    -55.9800mA         -36.1700mA         -80.6100mA 
+  1.88    -56.3500mA         -36.4100mA         -81.1700mA 
+  1.96    -56.7000mA         -36.6300mA         -81.6900mA 
+  2.04    -57.0200mA         -36.8300mA         -82.1700mA 
+  2.12    -57.3200mA         -37.0300mA         -82.6100mA 
+  2.20    -57.6000mA         -37.2100mA         -83.0300mA 
+  2.28    -57.8600mA         -37.3800mA         -83.4200mA 
+  2.36    -58.1200mA         -37.5500mA         -83.7800mA 
+  2.44    -58.3600mA         -37.7097mA         -84.1300mA 
+  2.52    -58.5900mA         -37.8856mA         -84.4600mA 
+  2.60    -58.7999mA         -38.0616mA         -84.7800mA 
+  2.68    -59.0193mA         -38.2375mA         -85.0800mA 
+  2.76    -59.2512mA         -38.4135mA         -85.3600mA 
+  2.84    -59.4830mA         -38.5894mA         -85.6395mA 
+  2.92    -59.7149mA         -38.7653mA         -85.9414mA 
+  3.00    -59.9467mA         -38.9413mA         -86.2433mA 
+  3.08    -60.1786mA         -39.1172mA         -86.5452mA 
+  3.16    -60.4105mA         -39.2932mA         -86.8471mA 
+  3.24    -60.6423mA         -39.4691mA         -87.1490mA 
+  3.32    -60.8742mA         -39.6450mA         -87.4509mA 
+  3.40    -61.1060mA         -39.8210mA         -87.7528mA 
+  3.48    -61.3379mA         -39.9969mA         -88.0547mA 
+  3.56    -61.5698mA         -40.1729mA         -88.3566mA 
+  3.64    -61.8016mA         -40.3488mA         -88.6585mA 
+  3.72    -62.0335mA         -40.5247mA         -88.9604mA 
+  3.80    -62.2653mA         -40.7007mA         -89.2623mA 
+  3.88    -62.4972mA         -40.8766mA         -89.5642mA 
+  3.96    -62.7291mA         -41.0526mA         -89.8661mA 
+  4.04    -62.9609mA         -41.2285mA         -90.1680mA 
+  4.12    -63.1928mA         -41.4044mA         -90.4699mA 
+  4.20    -63.4246mA         -41.5804mA         -90.7718mA 
+  4.28    -63.6565mA         -41.7563mA         -91.0737mA 
+  4.36    -63.8884mA         -41.9323mA         -91.3756mA 
+  4.44    -64.1202mA         -42.1082mA         -91.6775mA 
+  4.52    -64.3521mA         -42.2841mA         -91.9794mA 
+  4.60    -64.5839mA         -42.4601mA         -92.2813mA 
+  4.68    -64.8158mA         -42.6360mA         -92.5832mA 
+  4.76    -65.0477mA         -42.8120mA         -92.8851mA 
+  4.84    -65.2795mA         -42.9879mA         -93.1870mA 
+  4.92    -65.5114mA         -43.1638mA         -93.4889mA 
+  5.00    -65.7432mA         -43.3398mA         -93.7908mA 
+[GND_clamp]
+|Voltage   I(typ)              I(min)              I(max) 
+ | 
+  -2.50    -677.7251mA         -618.6813mA         -772.4719mA 
+  -2.44    -653.5545mA         -597.5824mA         -744.1573mA 
+  -2.38    -629.3839mA         -576.4835mA         -715.8427mA 
+  -2.32    -605.2133mA         -555.3846mA         -687.5281mA 
+  -2.26    -581.0427mA         -534.2857mA         -659.2135mA 
+  -2.20    -556.8720mA         -513.1868mA         -630.8989mA 
+  -2.14    -532.7014mA         -492.0879mA         -602.5843mA 
+  -2.08    -508.5308mA         -470.9890mA         -574.2697mA 
+  -2.02    -484.3602mA         -449.8901mA         -545.9551mA 
+  -1.96    -460.1896mA         -428.7912mA         -517.6404mA 
+  -1.90    -436.0190mA         -407.6923mA         -489.3258mA 
+  -1.84    -411.8483mA         -386.5934mA         -461.0112mA 
+  -1.78    -387.6777mA         -365.4945mA         -432.6966mA 
+  -1.72    -363.5071mA         -344.3956mA         -404.3820mA 
+  -1.66    -339.3365mA         -323.2967mA         -376.0674mA 
+  -1.60    -315.1659mA         -302.1978mA         -347.7528mA 
+  -1.54    -290.9953mA         -281.0989mA         -319.4382mA 
+  -1.48    -266.8246mA         -260.0000mA         -291.1236mA 
+  -1.42    -242.6540mA         -238.9011mA         -262.8090mA 
+  -1.36    -218.4834mA         -217.8022mA         -234.4944mA 
+  -1.30    -194.3128mA         -196.7033mA         -206.1798mA 
+  -1.24    -170.1422mA         -175.6044mA         -177.8652mA 
+  -1.18    -146.4286mA         -154.5055mA         -149.5506mA 
+  -1.12    -125.0000mA         -133.4066mA         -121.2360mA 
+  -1.06    -103.5714mA         -112.3077mA         -94.8000mA 
+  -1.00    -83.9474mA         -92.9364mA         -75.0000mA 
+  -0.94    -64.6842mA         -75.9836mA         -58.0000mA 
+  -0.88    -47.0000mA         -59.0309mA         -48.0000mA 
+  -0.82    -35.0000mA         -42.0782mA         -40.0000mA 
+  -0.76    -28.0000mA         -28.0000mA         -32.0000mA 
+  -0.70    -20.3333mA         -19.0000mA         -25.0000mA 
+  -0.64    -14.6667mA         -13.0000mA         -19.0000mA 
+  -0.58    -10.0000mA          -8.0000mA         -14.0000mA 
+  -0.52     -7.0000mA          -5.0000mA          -9.0000mA 
+  -0.46     -3.5000mA          -3.0000mA          -5.5000mA 
+  -0.40     -2.0000mA          -1.8000mA          -2.5000mA 
+  -0.34     -1.0000mA          -3.0000fA          -1.0000mA 
+  -0.28       0.0000A            0.0000A            0.0000A 
+  -0.22       0.0000A            0.0000A            0.0000A 
+  -0.16       0.0000A            0.0000A            0.0000A 
+  -0.10       0.0000A            0.0000A            0.0000A 
+  -0.04       0.0000A            0.0000A            0.0000A 
+  0.02       0.0000A            0.0000A            0.0000A 
+  0.08       0.0000A            0.0000A            0.0000A 
+  0.14       0.0000A            0.0000A            0.0000A 
+  0.20       0.0000A            0.0000A            0.0000A 
+  0.26       0.0000A            0.0000A            0.0000A 
+  0.32       0.0000A            0.0000A            0.0000A 
+  0.38       0.0000A            0.0000A            0.0000A 
+  0.44       0.0000A            0.0000A            0.0000A 
+  0.50       0.0000A            0.0000A            0.0000A 
+  0.56       0.0000A            0.0000A            0.0000A 
+  0.62       0.0000A            0.0000A            0.0000A 
+  0.68       0.0000A            0.0000A            0.0000A 
+  0.74       0.0000A            0.0000A            0.0000A 
+  0.80       0.0000A            0.0000A            0.0000A 
+  0.86       0.0000A            0.0000A            0.0000A 
+  0.92       0.0000A            0.0000A            0.0000A 
+  0.98       0.0000A            0.0000A            0.0000A 
+  1.04       0.0000A            0.0000A            0.0000A 
+  1.10       0.0000A            0.0000A            0.0000A 
+  1.16       0.0000A            0.0000A            0.0000A 
+  1.22       0.0000A            0.0000A            0.0000A 
+  1.28       0.0000A            0.0000A            0.0000A 
+  1.34       0.0000A            0.0000A            0.0000A 
+  1.40       0.0000A            0.0000A            0.0000A 
+  1.46       0.0000A            0.0000A            0.0000A 
+  1.52       0.0000A            0.0000A            0.0000A 
+  1.58       0.0000A            0.0000A            0.0000A 
+  1.64       0.0000A            0.0000A            0.0000A 
+  1.70       0.0000A            0.0000A            0.0000A 
+  1.76       0.0000A            0.0000A            0.0000A 
+  1.82       0.0000A            0.0000A            0.0000A 
+  1.88       0.0000A            0.0000A            0.0000A 
+  1.94       0.0000A            0.0000A            0.0000A 
+  2.00       0.0000A            0.0000A            0.0000A 
+  2.06       0.0000A            0.0000A            0.0000A 
+  2.12       0.0000A            0.0000A            0.0000A 
+  2.18       0.0000A            0.0000A            0.0000A 
+  2.24       0.0000A            0.0000A            0.0000A 
+  2.30       0.0000A            0.0000A            0.0000A 
+  2.36       0.0000A            0.0000A            0.0000A 
+  2.42       0.0000A            0.0000A            0.0000A 
+  2.48       0.0000A            0.0000A            0.0000A 
+|
+[POWER_clamp]
+|Voltage   I(typ)              I(min)              I(max) 
+ | 
+  -2.49       0.0000A            0.0000A            0.0000A 
+  -2.46       0.0000A            0.0000A            0.0000A 
+  -2.43       0.0000A            0.0000A            0.0000A 
+  -2.40       0.0000A            0.0000A            0.0000A 
+  -2.37       0.0000A            0.0000A            0.0000A 
+  -2.34       0.0000A            0.0000A            0.0000A 
+  -2.31       0.0000A            0.0000A            0.0000A 
+  -2.28       0.0000A            0.0000A            0.0000A 
+  -2.25       0.0000A            0.0000A            0.0000A 
+  -2.22       0.0000A            0.0000A            0.0000A 
+  -2.19       0.0000A            0.0000A            0.0000A 
+  -2.16       0.0000A            0.0000A            0.0000A 
+  -2.13       0.0000A            0.0000A            0.0000A 
+  -2.10       0.0000A            0.0000A            0.0000A 
+  -2.07       0.0000A            0.0000A            0.0000A 
+  -2.04       0.0000A            0.0000A            0.0000A 
+  -2.01       0.0000A            0.0000A            0.0000A 
+  -1.98       0.0000A            0.0000A            0.0000A 
+  -1.95       0.0000A            0.0000A            0.0000A 
+  -1.92       0.0000A            0.0000A            0.0000A 
+  -1.89       0.0000A            0.0000A            0.0000A 
+  -1.86       0.0000A            0.0000A            0.0000A 
+  -1.83       0.0000A            0.0000A            0.0000A 
+  -1.80       0.0000A            0.0000A            0.0000A 
+  -1.77       0.0000A            0.0000A            0.0000A 
+  -1.74       0.0000A            0.0000A            0.0000A 
+  -1.71       0.0000A            0.0000A            0.0000A 
+  -1.68       0.0000A            0.0000A            0.0000A 
+  -1.65       0.0000A            0.0000A            0.0000A 
+  -1.62       0.0000A            0.0000A            0.0000A 
+  -1.59       0.0000A            0.0000A            0.0000A 
+  -1.56       0.0000A            0.0000A            0.0000A 
+  -1.53       0.0000A            0.0000A            0.0000A 
+  -1.50       0.0000A            0.0000A            0.0000A 
+  -1.47       0.0000A            0.0000A            0.0000A 
+  -1.44       0.0000A            0.0000A            0.0000A 
+  -1.41       0.0000A            0.0000A            0.0000A 
+  -1.38       0.0000A            0.0000A            0.0000A 
+  -1.35       0.0000A            0.0000A            0.0000A 
+  -1.32       0.0000A            0.0000A            0.0000A 
+  -1.29       0.0000A            0.0000A            0.0000A 
+  -1.26       0.0000A            0.0000A            0.0000A 
+  -1.23       0.0000A            0.0000A            0.0000A 
+  -1.20       0.0000A            0.0000A            0.0000A 
+  -1.17       0.0000A            0.0000A            0.0000A 
+  -1.14       0.0000A            0.0000A            0.0000A 
+  -1.11       0.0000A            0.0000A            0.0000A 
+  -1.08       0.0000A            0.0000A            0.0000A 
+  -1.05       0.0000A            0.0000A            0.0000A 
+  -1.02       0.0000A            0.0000A            0.0000A 
+  -0.99       0.0000A            0.0000A            0.0000A 
+  -0.96       0.0000A            0.0000A            0.0000A 
+  -0.93       0.0000A            0.0000A            0.0000A 
+  -0.90       0.0000A            0.0000A            0.0000A 
+  -0.87       0.0000A            0.0000A            0.0000A 
+  -0.84       0.0000A            0.0000A            0.0000A 
+  -0.81       0.0000A            0.0000A            0.0000A 
+  -0.78       0.0000A            0.0000A            0.0000A 
+  -0.75       0.0000A            0.0000A            0.0000A 
+  -0.72       0.0000A            0.0000A            0.0000A 
+  -0.69       0.0000A            0.0000A            0.0000A 
+  -0.66       0.0000A            0.0000A            0.0000A 
+  -0.63       0.0000A            0.0000A            0.0000A 
+  -0.60       0.0000A            0.0000A            0.0000A 
+  -0.57       0.0000A            0.0000A            0.0000A 
+  -0.54       0.0000A            0.0000A            0.0000A 
+  -0.51       0.0000A            0.0000A            0.0000A 
+  -0.48       0.0000A            0.0000A            0.0000A 
+  -0.45       0.0000A            0.0000A            0.0000A 
+  -0.42       0.0000A            0.0000A            0.0000A 
+  -0.39       0.0000A            0.0000A            0.0000A 
+  -0.36       0.0000A            0.0000A            0.0000A 
+  -0.33       0.0000A            0.0000A            0.0000A 
+  -0.30       0.0000A            0.0000A            0.0000A 
+  -0.27       0.0000A            0.0000A            0.0000A 
+  -0.24       0.0000A            0.0000A            0.0000A 
+  -0.21       0.0000A            0.0000A            0.0000A 
+  -0.18       0.0000A            0.0000A            0.0000A 
+  -0.15       0.0000A            0.0000A            0.0000A 
+  -0.12       0.0000A            0.0000A            0.0000A 
+  -0.09       0.0000A            0.0000A            0.0000A 
+  -0.06       0.0000A            0.0000A            0.0000A 
+  -0.03       0.0000A            0.0000A            0.0000A 
+  0.00       0.0000A            0.0000A            0.0000A 
+|
+[Ramp]  
+dV/dt_r  1.0956/0.6043n      0.8604/1.0142n      1.2900/0.3974n
+dV/dt_f  1.0551/0.8392n      0.7954/1.4220n      1.2559/0.5422n
+R_load = 50.0000
+|  
+[Rising Waveform] 
+R_fixture= 50.0000
+V_fixture= 2.5000
+V_fixture_min= 2.3000
+V_fixture_max= 2.7000
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              0.7414V           0.9733V             0.6069V
+0.10nS            0.7414V           0.9733V             0.6069V
+0.20nS            0.7414V           0.9733V             0.6069V
+0.30nS            0.7414V           0.9733V             0.6069V
+0.40nS            0.7414V           0.9733V             0.6069V
+0.51nS            0.7414V           0.9733V             0.6065V
+0.61nS            0.7415V           0.9733V             0.6038V
+0.71nS            0.7414V           0.9733V             0.6742V
+0.81nS            0.7397V           0.9733V             1.0460V
+0.91nS            0.7375V           0.9733V             1.6390V
+1.01nS            0.8015V           0.9734V             2.1490V
+1.11nS            1.0480V           0.9734V             2.4710V
+1.21nS            1.4330V           0.9734V             2.6060V
+1.31nS            1.7990V           0.9725V             2.6490V
+1.41nS            2.0690V           0.9681V             2.6750V
+1.52nS            2.2590V           0.9698V             2.6830V
+1.62nS            2.3830V           1.0160V             2.6880V
+1.72nS            2.4410V           1.1670V             2.6910V
+1.82nS            2.4650V           1.3710V             2.6930V
+1.92nS            2.4770V           1.6000V             2.6940V
+2.02nS            2.4840V           1.7860V             2.6950V
+2.12nS            2.4880V           1.9650V             2.6960V
+2.22nS            2.4910V           2.0730V             2.6960V
+2.32nS            2.4920V           2.1500V             2.6970V
+2.42nS            2.4940V           2.2040V             2.6970V
+2.53nS            2.4950V           2.2390V             2.6970V
+2.63nS            2.4950V           2.2610V             2.6980V
+2.73nS            2.4960V           2.2730V             2.6980V
+2.83nS            2.4960V           2.2810V             2.6980V
+2.93nS            2.4960V           2.2850V             2.6980V
+3.03nS            2.4970V           2.2880V             2.6980V
+3.13nS            2.4970V           2.2900V             2.6990V
+3.23nS            2.4970V           2.2920V             2.6990V
+3.33nS            2.4970V           2.2930V             2.6990V
+3.43nS            2.4980V           2.2940V             2.6990V
+3.54nS            2.4980V           2.2940V             2.6990V
+3.64nS            2.4980V           2.2950V             2.6990V
+3.74nS            2.4980V           2.2950V             2.6990V
+3.84nS            2.4980V           2.2960V             2.6990V
+3.94nS            2.4980V           2.2960V             2.6990V
+4.04nS            2.4980V           2.2960V             2.6990V
+4.14nS            2.4980V           2.2970V             2.6990V
+4.24nS            2.4980V           2.2970V             2.6990V
+4.34nS            2.4980V           2.2970V             2.6990V
+4.44nS            2.4980V           2.2970V             2.6990V
+4.55nS            2.4990V           2.2970V             2.6990V
+4.65nS            2.4990V           2.2970V             2.6990V
+4.75nS            2.4990V           2.2980V             2.6990V
+4.85nS            2.4990V           2.2980V             2.6990V
+4.95nS            2.4990V           2.2980V             2.6990V
+5.05nS            2.4990V           2.2980V             2.6990V
+5.15nS            2.4990V           2.2980V             2.6990V
+5.25nS            2.4990V           2.2980V             2.6990V
+5.35nS            2.4990V           2.2980V             2.6990V
+5.45nS            2.4990V           2.2980V             2.6990V
+5.56nS            2.4990V           2.2980V             2.6990V
+5.66nS            2.4990V           2.2980V             2.6990V
+5.76nS            2.4990V           2.2980V             2.6990V
+5.86nS            2.4990V           2.2980V             2.6990V
+5.96nS            2.4990V           2.2980V             2.7000V
+6.06nS            2.4990V           2.2980V             2.7000V
+6.16nS            2.4990V           2.2980V             2.7000V
+6.26nS            2.4990V           2.2980V             2.7000V
+6.36nS            2.4990V           2.2990V             2.7000V
+6.46nS            2.4990V           2.2990V             2.7000V
+6.57nS            2.4990V           2.2990V             2.7000V
+6.67nS            2.4990V           2.2990V             2.7000V
+6.77nS            2.4990V           2.2990V             2.7000V
+6.87nS            2.4990V           2.2990V             2.7000V
+6.97nS            2.4990V           2.2990V             2.7000V
+7.07nS            2.4990V           2.2990V             2.7000V
+7.17nS            2.4990V           2.2990V             2.7000V
+7.27nS            2.4990V           2.2990V             2.7000V
+7.37nS            2.4990V           2.2990V             2.7000V
+7.47nS            2.4990V           2.2990V             2.7000V
+7.58nS            2.4990V           2.2990V             2.7000V
+7.68nS            2.4990V           2.2990V             2.7000V
+7.78nS            2.4990V           2.2990V             2.7000V
+7.88nS            2.4990V           2.2990V             2.7000V
+7.98nS            2.4990V           2.2990V             2.7000V
+8.08nS            2.4990V           2.2990V             2.7000V
+8.18nS            2.4990V           2.2990V             2.7000V
+8.28nS            2.4990V           2.2990V             2.7000V
+8.38nS            2.4990V           2.2990V             2.7000V
+8.48nS            2.4990V           2.2990V             2.7000V
+8.59nS            2.4990V           2.2990V             2.7000V
+8.69nS            2.4990V           2.2990V             2.7000V
+8.79nS            2.4990V           2.2990V             2.7000V
+8.89nS            2.4990V           2.2990V             2.7000V
+8.99nS            2.4990V           2.2990V             2.7000V
+9.09nS            2.4990V           2.2990V             2.7000V
+9.19nS            2.4990V           2.2990V             2.7000V
+9.29nS            2.4990V           2.2990V             2.7000V
+9.39nS            2.4990V           2.2990V             2.7000V
+9.49nS            2.4990V           2.2990V             2.7000V
+9.60nS            2.4990V           2.2990V             2.7000V
+9.70nS            2.4990V           2.2990V             2.7000V
+9.80nS            2.4990V           2.2990V             2.7000V
+9.90nS            2.4990V           2.2990V             2.7000V
+10.00nS           2.4990V           2.2990V             2.7000V
+|  
+[Rising Waveform] 
+R_fixture= 50.0000
+V_fixture= 0.0
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              0.0V              0.0V                0.0V
+0.10nS            0.0V              0.0V                0.0V
+0.20nS            0.0V              0.0V                0.0V
+0.30nS            0.0V              0.0V                -2.0630uV
+0.40nS            0.0V              0.0V                -5.2880uV
+0.51nS            -2.4890uV         0.0V                0.1443mV
+0.61nS            -4.5510uV         0.0V                -1.6200mV
+0.71nS            14.6400uV         0.0V                -11.8700mV
+0.81nS            0.2980mV          -0.4975uV           8.1070mV
+0.91nS            -1.4960mV         -1.4000uV           0.1458V
+1.01nS            -9.0840mV         -2.3530uV           0.4212V
+1.11nS            -12.1500mV        -3.4260uV           0.7642V
+1.21nS            15.1300mV         4.9640uV            1.1210V
+1.31nS            0.1117V           81.3500uV           1.4520V
+1.41nS            0.2642V           0.3031mV            1.7200V
+1.52nS            0.4543V           -0.9194mV           1.8880V
+1.62nS            0.6651V           -5.2870mV           1.9760V
+1.72nS            0.8768V           -9.3560mV           2.0310V
+1.82nS            1.0740V           -11.9200mV          2.0600V
+1.92nS            1.2460V           -2.3140mV           2.0810V
+2.02nS            1.3930V           29.6700mV           2.0980V
+2.12nS            1.5110V           64.6200mV           2.1070V
+2.22nS            1.5940V           0.1391V             2.1140V
+2.32nS            1.6500V           0.2276V             2.1190V
+2.42nS            1.6860V           0.3294V             2.1240V
+2.53nS            1.7160V           0.4357V             2.1290V
+2.63nS            1.7360V           0.5440V             2.1320V
+2.73nS            1.7490V           0.6489V             2.1340V
+2.83nS            1.7590V           0.7480V             2.1350V
+2.93nS            1.7700V           0.8371V             2.1370V
+3.03nS            1.7770V           0.9214V             2.1390V
+3.13nS            1.7810V           0.9924V             2.1400V
+3.23nS            1.7860V           1.0560V             2.1420V
+3.33nS            1.7900V           1.1110V             2.1430V
+3.43nS            1.7950V           1.1610V             2.1430V
+3.54nS            1.7980V           1.2020V             2.1440V
+3.64nS            1.8000V           1.2370V             2.1450V
+3.74nS            1.8020V           1.2650V             2.1460V
+3.84nS            1.8030V           1.2880V             2.1460V
+3.94nS            1.8050V           1.3060V             2.1460V
+4.04nS            1.8060V           1.3220V             2.1470V
+4.14nS            1.8080V           1.3370V             2.1470V
+4.24nS            1.8090V           1.3470V             2.1480V
+4.34nS            1.8100V           1.3560V             2.1480V
+4.44nS            1.8110V           1.3620V             2.1480V
+4.55nS            1.8120V           1.3680V             2.1480V
+4.65nS            1.8130V           1.3740V             2.1490V
+4.75nS            1.8140V           1.3800V             2.1490V
+4.85nS            1.8150V           1.3860V             2.1490V
+4.95nS            1.8150V           1.3890V             2.1490V
+5.05nS            1.8165V           1.3935V             2.1490V
+5.15nS            1.8170V           1.3980V             2.1490V
+5.25nS            1.8180V           1.4010V             2.1490V
+5.35nS            1.8180V           1.4030V             2.1500V
+5.45nS            1.8190V           1.4050V             2.1500V
+5.56nS            1.8190V           1.4060V             2.1500V
+5.66nS            1.8200V           1.4080V             2.1500V
+5.76nS            1.8200V           1.4090V             2.1500V
+5.86nS            1.8210V           1.4110V             2.1500V
+5.96nS            1.8210V           1.4120V             2.1500V
+6.06nS            1.8210V           1.4130V             2.1500V
+6.16nS            1.8220V           1.4140V             2.1500V
+6.26nS            1.8220V           1.4150V             2.1500V
+6.36nS            1.8220V           1.4160V             2.1500V
+6.46nS            1.8220V           1.4170V             2.1500V
+6.57nS            1.8230V           1.4180V             2.1500V
+6.67nS            1.8230V           1.4190V             2.1500V
+6.77nS            1.8230V           1.4200V             2.1500V
+6.87nS            1.8230V           1.4210V             2.1500V
+6.97nS            1.8230V           1.4210V             2.1500V
+7.07nS            1.8240V           1.4220V             2.1500V
+7.17nS            1.8240V           1.4230V             2.1500V
+7.27nS            1.8240V           1.4230V             2.1500V
+7.37nS            1.8240V           1.4240V             2.1500V
+7.47nS            1.8240V           1.4250V             2.1500V
+7.58nS            1.8240V           1.4250V             2.1500V
+7.68nS            1.8250V           1.4260V             2.1500V
+7.78nS            1.8250V           1.4260V             2.1500V
+7.88nS            1.8250V           1.4270V             2.1500V
+7.98nS            1.8250V           1.4270V             2.1500V
+8.08nS            1.8250V           1.4280V             2.1500V
+8.18nS            1.8250V           1.4280V             2.1500V
+8.28nS            1.8250V           1.4290V             2.1500V
+8.38nS            1.8250V           1.4290V             2.1500V
+8.48nS            1.8250V           1.4290V             2.1500V
+8.59nS            1.8250V           1.4300V             2.1500V
+8.69nS            1.8250V           1.4300V             2.1500V
+8.79nS            1.8250V           1.4300V             2.1500V
+8.89nS            1.8260V           1.4310V             2.1500V
+8.99nS            1.8260V           1.4310V             2.1500V
+9.09nS            1.8260V           1.4310V             2.1500V
+9.19nS            1.8260V           1.4320V             2.1500V
+9.29nS            1.8260V           1.4320V             2.1500V
+9.39nS            1.8260V           1.4320V             2.1500V
+9.49nS            1.8260V           1.4320V             2.1500V
+9.60nS            1.8260V           1.4330V             2.1500V
+9.70nS            1.8260V           1.4330V             2.1500V
+9.80nS            1.8260V           1.4330V             2.1500V
+9.90nS            1.8260V           1.4330V             2.1500V
+10.00nS           1.8260V           1.4340V             2.1500V
+|  
+[Falling Waveform] 
+R_fixture= 50.0000
+V_fixture= 2.5000
+V_fixture_min= 2.3000
+V_fixture_max= 2.7000
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              2.5000V           2.3000V             2.7000V
+0.10nS            2.5000V           2.3000V             2.7000V
+0.20nS            2.5000V           2.3000V             2.7000V
+0.30nS            2.5000V           2.3000V             2.7000V
+0.40nS            2.5000V           2.3000V             2.6990V
+0.51nS            2.5000V           2.3000V             2.6980V
+0.61nS            2.4990V           2.3000V             2.7020V
+0.71nS            2.4990V           2.3000V             2.7080V
+0.81nS            2.4990V           2.3000V             2.6870V
+0.91nS            2.5040V           2.3000V             2.6270V
+1.01nS            2.5080V           2.2990V             2.5220V
+1.11nS            2.5010V           2.2990V             2.3340V
+1.21nS            2.4740V           2.2990V             2.0650V
+1.31nS            2.4270V           2.2990V             1.7790V
+1.41nS            2.3590V           2.3010V             1.5300V
+1.52nS            2.2490V           2.3050V             1.3160V
+1.62nS            2.0980V           2.3070V             1.1260V
+1.72nS            1.9320V           2.3060V             0.9634V
+1.82nS            1.7730V           2.3010V             0.8501V
+1.92nS            1.6240V           2.2870V             0.7811V
+2.02nS            1.4860V           2.2660V             0.7406V
+2.12nS            1.3700V           2.2370V             0.7001V
+2.22nS            1.2630V           2.1970V             0.6735V
+2.32nS            1.1810V           2.1440V             0.6618V
+2.42nS            1.0980V           2.0760V             0.6519V
+2.53nS            1.0160V           2.0000V             0.6457V
+2.63nS            0.9692V           1.9220V             0.6396V
+2.73nS            0.9219V           1.8440V             0.6335V
+2.83nS            0.8747V           1.7700V             0.6273V
+2.93nS            0.8496V           1.6980V             0.6212V
+3.03nS            0.8322V           1.6310V             0.6194V
+3.13nS            0.8187V           1.5700V             0.6176V
+3.23nS            0.8091V           1.5150V             0.6159V
+3.33nS            0.7995V           1.4600V             0.6141V
+3.43nS            0.7899V           1.4110V             0.6123V
+3.54nS            0.7803V           1.3680V             0.6116V
+3.64nS            0.7727V           1.3280V             0.6109V
+3.74nS            0.7695V           1.2920V             0.6102V
+3.84nS            0.7662V           1.2600V             0.6095V
+3.94nS            0.7630V           1.2330V             0.6088V
+4.04nS            0.7598V           1.2080V             0.6085V
+4.14nS            0.7570V           1.1830V             0.6083V
+4.24nS            0.7554V           1.1580V             0.6081V
+4.34nS            0.7537V           1.1330V             0.6078V
+4.44nS            0.7520V           1.1190V             0.6076V
+4.55nS            0.7503V           1.1040V             0.6075V
+4.65nS            0.7490V           1.0900V             0.6074V
+4.75nS            0.7482V           1.0750V             0.6073V
+4.85nS            0.7475V           1.0610V             0.6073V
+4.95nS            0.7468V           1.0510V             0.6072V
+5.05nS            0.7457V           1.0390V             0.6071V
+5.15nS            0.7450V           1.0290V             0.6071V
+5.25nS            0.7446V           1.0230V             0.6070V
+5.35nS            0.7442V           1.0170V             0.6070V
+5.45nS            0.7438V           1.0110V             0.6070V
+5.56nS            0.7435V           1.0070V             0.6070V
+5.66nS            0.7433V           1.0040V             0.6070V
+5.76nS            0.7431V           1.0010V             0.6069V
+5.86nS            0.7430V           0.9986V             0.6069V
+5.96nS            0.7428V           0.9957V             0.6069V
+6.06nS            0.7426V           0.9934V             0.6069V
+6.16nS            0.7425V           0.9918V             0.6069V
+6.26nS            0.7424V           0.9901V             0.6069V
+6.36nS            0.7423V           0.9884V             0.6069V
+6.46nS            0.7422V           0.9868V             0.6069V
+6.57nS            0.7421V           0.9855V             0.6069V
+6.67nS            0.7420V           0.9846V             0.6069V
+6.77nS            0.7420V           0.9836V             0.6069V
+6.87nS            0.7419V           0.9827V             0.6069V
+6.97nS            0.7419V           0.9818V             0.6069V
+7.07nS            0.7418V           0.9810V             0.6069V
+7.17nS            0.7418V           0.9805V             0.6069V
+7.27nS            0.7418V           0.9799V             0.6069V
+7.37nS            0.7417V           0.9794V             0.6069V
+7.47nS            0.7417V           0.9788V             0.6069V
+7.58nS            0.7417V           0.9784V             0.6069V
+7.68nS            0.7416V           0.9780V             0.6069V
+7.78nS            0.7416V           0.9777V             0.6069V
+7.88nS            0.7416V           0.9773V             0.6069V
+7.98nS            0.7416V           0.9770V             0.6069V
+8.08nS            0.7416V           0.9767V             0.6069V
+8.18nS            0.7416V           0.9765V             0.6069V
+8.28nS            0.7415V           0.9763V             0.6069V
+8.38nS            0.7415V           0.9761V             0.6069V
+8.48nS            0.7415V           0.9759V             0.6069V
+8.59nS            0.7415V           0.9757V             0.6069V
+8.69nS            0.7415V           0.9756V             0.6069V
+8.79nS            0.7415V           0.9754V             0.6069V
+8.89nS            0.7415V           0.9753V             0.6069V
+8.99nS            0.7415V           0.9751V             0.6069V
+9.09nS            0.7415V           0.9750V             0.6069V
+9.19nS            0.7415V           0.9749V             0.6069V
+9.29nS            0.7415V           0.9748V             0.6069V
+9.39nS            0.7415V           0.9748V             0.6069V
+9.49nS            0.7415V           0.9747V             0.6069V
+9.60nS            0.7415V           0.9746V             0.6069V
+9.70nS            0.7415V           0.9745V             0.6069V
+9.80nS            0.7415V           0.9745V             0.6069V
+9.90nS            0.7415V           0.9744V             0.6069V
+10.00nS           0.7415V           0.9743V             0.6069V
+|  
+[Falling Waveform] 
+R_fixture= 50.0000
+V_fixture= 0.0
+|time     V(typ)              V(min)              V(max)
+|  
+0.0S              1.8270V           1.4390V             2.1500V
+0.10nS            1.8270V           1.4390V             2.1500V
+0.20nS            1.8270V           1.4390V             2.1500V
+0.30nS            1.8270V           1.4390V             2.1500V
+0.40nS            1.8270V           1.4390V             2.1500V
+0.51nS            1.8270V           1.4390V             2.1520V
+0.61nS            1.8260V           1.4390V             2.1580V
+0.71nS            1.8280V           1.4390V             2.1350V
+0.81nS            1.8360V           1.4390V             2.0180V
+0.91nS            1.8340V           1.4390V             1.7420V
+1.01nS            1.7880V           1.4390V             1.2900V
+1.11nS            1.6910V           1.4410V             0.7790V
+1.21nS            1.4980V           1.4450V             0.3595V
+1.31nS            1.2270V           1.4530V             0.1362V
+1.41nS            0.9155V           1.4570V             63.5500mV
+1.52nS            0.5987V           1.4360V             31.8900mV
+1.62nS            0.3359V           1.3910V             17.6300mV
+1.72nS            0.1810V           1.3080V             11.6300mV
+1.82nS            0.1006V           1.1920V             8.9280mV
+1.92nS            48.9000mV         1.0500V             6.9420mV
+2.02nS            26.5300mV         0.8906V             4.9980mV
+2.12nS            15.7800mV         0.7208V             3.7700mV
+2.22nS            9.9400mV          0.5507V             2.9580mV
+2.32nS            7.3200mV          0.3948V             2.2840mV
+2.42nS            5.5430mV          0.2596V             1.6100mV
+2.53nS            4.2550mV          0.1660V             1.3020mV
+2.63nS            3.7040mV          0.1073V             1.1320mV
+2.73nS            3.2690mV          60.6900mV           0.9616mV
+2.83nS            2.9310mV          39.6800mV           0.7913mV
+2.93nS            2.5930mV          24.2400mV           0.6210mV
+3.03nS            2.2560mV          16.4200mV           0.5207mV
+3.13nS            1.9190mV          11.7100mV           0.4469mV
+3.23nS            1.7530mV          8.5870mV            0.3730mV
+3.33nS            1.5870mV          6.5060mV            0.2991mV
+3.43nS            1.4220mV          5.2200mV            0.2252mV
+3.54nS            1.2560mV          4.4510mV            0.1861mV
+3.64nS            1.0900mV          3.9380mV            0.1601mV
+3.74nS            0.9936mV          3.5860mV            0.1340mV
+3.84nS            0.8969mV          3.2340mV            0.1080mV
+3.94nS            0.8002mV          2.8820mV            81.9100uV
+4.04nS            0.7035mV          2.5310mV            68.6900uV
+4.14nS            0.6070mV          2.3350mV            60.3000uV
+4.24nS            0.5561mV          2.1820mV            51.9000uV
+4.34nS            0.5052mV          2.0300mV            43.5100uV
+4.44nS            0.4542mV          1.8770mV            35.1200uV
+4.55nS            0.4033mV          1.7250mV            27.8800uV
+4.65nS            0.3525mV          1.6100mV            21.0800uV
+4.75nS            0.3223mV          1.5050mV            14.2700uV
+4.85nS            0.2921mV          1.4010mV            7.4670uV
+4.95nS            0.2618mV          1.2960mV            0.6626uV
+5.05nS            0.2165mV          1.1535mV            1.0709uV
+5.15nS            0.1850mV          1.0460mV            3.8460uV
+5.25nS            0.1685mV          0.9773mV            5.6960uV
+5.35nS            0.1520mV          0.9084mV            7.5460uV
+5.45nS            0.1356mV          0.8394mV            5.6960uV
+5.56nS            0.1191mV          0.7870mV            2.4540uV
+5.66nS            0.1075mV          0.7391mV            -0.7888uV
+5.76nS            95.7900uV         0.6913mV            -4.0310uV
+5.86nS            84.1300uV         0.6435mV            -7.2740uV
+5.96nS            72.4700uV         0.5956mV            -6.5070uV
+6.06nS            60.8500uV         0.5593mV            -4.2310uV
+6.16nS            57.4800uV         0.5261mV            -1.9550uV
+6.26nS            54.1200uV         0.4930mV            0.3206uV
+6.36nS            50.7500uV         0.4598mV            2.5960uV
+6.46nS            47.3800uV         0.4267mV            0.9119uV
+6.57nS            44.0000uV         0.3993mV            -2.2640uV
+6.67nS            39.6700uV         0.3736mV            -5.4390uV
+6.77nS            35.3300uV         0.3479mV            -8.6140uV
+6.87nS            30.9900uV         0.3222mV            -11.7900uV
+6.97nS            26.6600uV         0.2965mV            -10.1800uV
+7.07nS            22.3400uV         0.2817mV            -6.7760uV
+7.17nS            21.4200uV         0.2699mV            -3.3700uV
+7.27nS            20.5000uV         0.2581mV            37.0800nV
+7.37nS            19.5800uV         0.2463mV            3.4440uV
+7.47nS            18.6500uV         0.2345mV            2.2980uV
+7.58nS            17.7300uV         0.2180mV            -0.5606uV
+7.68nS            15.8600uV         0.2004mV            -3.4200uV
+7.78nS            13.9900uV         0.1827mV            -6.2790uV
+7.88nS            12.1300uV         0.1650mV            -9.1380uV
+7.98nS            10.2600uV         0.1473mV            -7.6460uV
+8.08nS            8.4010uV          0.1412mV            -4.5160uV
+8.18nS            8.2360uV          0.1383mV            -1.3860uV
+8.28nS            8.0700uV          0.1354mV            1.7440uV
+8.38nS            7.9050uV          0.1325mV            4.8740uV
+8.48nS            7.7390uV          0.1296mV            3.3020uV
+8.59nS            7.5720uV          0.1195mV            -40.1700nV
+8.69nS            7.1130uV          0.1075mV            -3.3820uV
+8.79nS            6.6530uV          95.4800uV           -6.7250uV
+8.89nS            6.1930uV          83.4500uV           -10.0700uV
+8.99nS            5.7330uV          71.4200uV           -8.4260uV
+9.09nS            5.2710uV          68.9800uV           -4.9090uV
+9.19nS            4.4050uV          69.1900uV           -1.3930uV
+9.29nS            3.5380uV          69.3900uV           2.1240uV
+9.39nS            2.6720uV          69.5900uV           5.6400uV
+9.49nS            1.8050uV          69.7900uV           4.2090uV
+9.60nS            0.9499uV          65.1300uV           0.9150uV
+9.70nS            2.0110uV          59.1200uV           -2.3790uV
+9.80nS            3.0720uV          53.1200uV           -5.6730uV
+9.90nS            4.1340uV          47.1100uV           -8.9670uV
+10.00nS           5.1950uV          41.1100uV           -3.6690uV
+|  
+|
+| End [Model] LVCMOS25_S_12_TB_25
+|
+[END]

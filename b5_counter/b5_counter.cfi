@@ -1,0 +1,12 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            05/24/2016 - 23:59
+SOURCE          C:\Users\teramoto_2\Documents\works\FPGA\project\b5_counter\b5_counter.bin
+DEVICE          2048K
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0002080E
+START_ADDRESS   0x00000000 END_ADDRESS 0x000A6CE9 DIRECTION_UP   "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit" 3s700afg400
+                                                                 "C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter.bit" 3s700afg400

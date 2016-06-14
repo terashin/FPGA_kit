@@ -1,0 +1,28 @@
+Command line:
+   elect_dice_sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  52660
+
+Wed May 25 21:28:32 2016
+
+
+ Elaboration Time: 0.187202 sec
+
+ Current Memory Usage: 1142.57 Meg
+
+ Total Signals          : 18
+ Total Nets             : 26
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 19
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 128
+
+ Total Simulation Time: 0.187202 sec
+
+ Current Memory Usage: 1142.57 Meg
+
+Wed May 25 21:28:37 2016
+

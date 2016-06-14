@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p bin -c FF -o C:\Users\teramoto_2\Documents\works\FPGA\project\and\//ADDA -s 1024 -u 0 C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/adda.bit 
+
+PROM C:\Users\teramoto_2\Documents\works\FPGA\project\and\ADDA.prm map: THU 9 JUN 12:31:1 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Bin
+Size          1024K
+PROM start    00000000
+PROM end      000fffff
+PROM checksum 0001e802
+
+        Addr1        Addr2                     Date File(s)
+     00000000     00053671     Jun 09 12:22:21 2016 C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/adda.bit

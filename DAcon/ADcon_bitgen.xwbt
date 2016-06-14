@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\teramoto_2\Documents\works\FPGA\ISE\DAcon\ADcon.ncd
+OUTFILE=C:\Users\teramoto_2\Documents\works\FPGA\ISE\DAcon\ADcon.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700a-4fg400
+WORKINGDIR=C:\Users\teramoto_2\Documents\works\FPGA\ISE\DAcon
+LICENSE=ISE
+USER_INFO=210656332_1777496283_210570331_267

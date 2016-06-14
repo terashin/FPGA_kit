@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-05-19T13:46:37</DateModified>
+  <DateModified>2016-05-24T23:51:56</DateModified>
   <ModuleName>AND</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/teramoto_2/Documents/works/FPGA/project/and/iseconfig/AND.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/teramoto_2/Documents/works/FPGA/project/and</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/teramoto_2/Documents/works/FPGA/project/and\</ImplementationReportsDirectory>
   <DateInitialized>2016-05-19T13:46:37</DateInitialized>
   <EnableMessageFiltering>true</EnableMessageFiltering>
  </header>
@@ -19,7 +19,7 @@
     <toc-item title="Detailed Reports" target="Detailed Reports" />
    </view>
    <view inputState="Unknown" program="implementation" contextTags="FPGA_ONLY" hidden="true" type="HTML" file="AND_envsettings.html" label="System Settings" />
-   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="AND_map.xrpt" label="IOB Properties" />
+   <view inputState="Translated" program="map" locator="MAP_IOB_TABLE" contextTags="FPGA_ONLY" type="IOBProperties" file="AND_map.xrpt" showConstraints="0" label="IOB Properties" />
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="AND_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="AND_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="AND.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />

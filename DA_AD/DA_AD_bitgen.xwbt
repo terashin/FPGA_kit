@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Kishine\Documents\kenkyu\workspace\DA_AD\DA_AD.ncd
+OUTFILE=C:\Users\Kishine\Documents\kenkyu\workspace\DA_AD\DA_AD.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700a-4fg400
+WORKINGDIR=C:\Users\Kishine\Documents\kenkyu\workspace\DA_AD
+LICENSE=ISE
+USER_INFO=210656332_1777496283_210570331_229

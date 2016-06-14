@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "CSLD1" LOC = C6;
+NET "SDIN1" LOC = F7;
+NET "SDOUT" LOC = A6;
+NET "SCK1" LOC = U20;
+NET "SDIN2" LOC = A7;
+NET "SCK2" LOC = A10;
+NET "CSLD2" LOC = C7;
+NET "CLK" LOC = E11;

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/teramoto_2/Documents/works/FPGA/ISE/ADcon/ADtest_isim_beh.exe" -prj "C:/Users/teramoto_2/Documents/works/FPGA/ISE/ADcon/ADtest_beh.prj" "work.ADtest" "work.glbl" 

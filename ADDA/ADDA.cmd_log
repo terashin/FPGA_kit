@@ -1,0 +1,36 @@
+xst -intstyle ise -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -ifn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.xst" -ofn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 
+xst -intstyle ise -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -ifn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.xst" -ofn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 
+xst -intstyle ise -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -ifn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.xst" -ofn "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/Kishine/Documents/kenkyu/workspace/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 
+xst -intstyle ise -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -ifn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.xst" -ofn "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/ADDA.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc ADDA.ucf -p xc3s700a-fg400-4 ADDA.ngc ADDA.ngd  
+map -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o ADDA_map.ncd ADDA.ngd ADDA.pcf 
+par -filter "C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 ADDA_map.ncd ADDA.ncd ADDA.pcf 
+trce -filter C:/Users/teramoto_2/Documents/works/FPGA/project/ADDA/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml ADDA.twx ADDA.ncd -o ADDA.twr ADDA.pcf -ucf ADDA.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f ADDA.ut ADDA.ncd 

@@ -1,0 +1,400 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: ADDA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ADDA.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ADDA"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg400
+
+---- Source Options
+Top Module Name                    : ADDA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : NO
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ADDA.v" in library work
+Module <ADDA> compiled
+No errors in compilation
+Analysis of file <"ADDA.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <ADDA> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <ADDA>.
+Module <ADDA> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ADDA>.
+    Related source file is "ADDA.v".
+    Found 1-bit register for signal <CSLD1>.
+    Found 1-bit register for signal <CSLD2>.
+    Found 1-bit register for signal <SCK1>.
+    Found 1-bit register for signal <SCK2>.
+    Found 16-bit register for signal <Din1>.
+    Found 16-bit register for signal <Din2>.
+    Found 8-bit up counter for signal <div1>.
+    Found 13-bit up counter for signal <div2>.
+    Found 13-bit up counter for signal <div3>.
+    Found 16-bit register for signal <Dout1>.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  52 D-type flip-flop(s).
+Unit <ADDA> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 13-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 52
+ 1-bit register                                        : 52
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 13-bit up counter                                     : 2
+ 8-bit up counter                                      : 1
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ADDA> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ADDA, actual ratio is 0.
+Replicating register Din1_15 to handle IOB=TRUE attribute
+Replicating register Din2_15 to handle IOB=TRUE attribute
+Replicating register CSLD1 to handle IOB=TRUE attribute
+Replicating register CSLD2 to handle IOB=TRUE attribute
+Replicating register SCK1 to handle IOB=TRUE attribute
+Replicating register SCK2 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+Processing Unit <ADDA> :
+	Found 4-bit shift register for signal <Din2_14>.
+	Found 2-bit shift register for signal <Din2_0>.
+	Found 16-bit shift register for signal <Din1_14>.
+	Found 6-bit shift register for signal <Dout1_15>.
+Unit <ADDA> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+# Shift Registers                                      : 4
+ 16-bit shift register                                 : 1
+ 2-bit shift register                                  : 1
+ 4-bit shift register                                  : 1
+ 6-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ADDA.ngr
+Top Level Output File Name         : ADDA
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Soft
+
+Design Statistics
+# IOs                              : 8
+
+Cell Usage :
+# BELS                             : 134
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 31
+#      LUT2                        : 2
+#      LUT3                        : 6
+#      LUT4                        : 21
+#      LUT4_D                      : 1
+#      LUT4_L                      : 3
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 34
+# FlipFlops/Latches                : 68
+#      FD                          : 40
+#      FDE                         : 28
+# Shift Registers                  : 4
+#      SRL16E                      : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 7
+#      IBUF                        : 1
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg400-4 
+
+ Number of Slices:                       39  out of   5888     0%  
+ Number of Slice Flip Flops:             62  out of  11776     0%  
+ Number of 4 input LUTs:                 71  out of  11776     0%  
+    Number used as logic:                67
+    Number used as Shift registers:       4
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    311     2%  
+    IOB Flip Flops:                       6
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 72    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.779ns (Maximum Frequency: 173.040MHz)
+   Minimum input arrival time before clock: 2.244ns
+   Maximum output required time after clock: 5.531ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.779ns (frequency: 173.040MHz)
+  Total number of paths / destination ports: 847 / 104
+-------------------------------------------------------------------------
+Delay:               5.779ns (Levels of Logic = 3)
+  Source:            div1_2 (FF)
+  Destination:       Din2_10 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: div1_2 to Din2_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.590  div1_2 (div1_2)
+     LUT4:I0->O            1   0.648   0.423  Din1_15_cmp_eq00001_SW0 (N01)
+     LUT4_D:I3->O         16   0.648   1.037  Din1_15_cmp_eq00001 (SCK1_and0000)
+     LUT4:I3->O           10   0.648   0.882  Din2_10_not00011 (Din2_10_not0001)
+     FDE:CE                    0.312          Din2_10
+    ----------------------------------------
+    Total                      5.779ns (2.847ns logic, 2.932ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.244ns (Levels of Logic = 2)
+  Source:            SDOUT (PAD)
+  Destination:       Dout1_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: SDOUT to Dout1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.849   0.500  SDOUT_IBUF (SDOUT_IBUF)
+     LUT4:I1->O            1   0.643   0.000  Dout1_0_mux00001 (Dout1_0_mux0000)
+     FDE:D                     0.252          Dout1_0
+    ----------------------------------------
+    Total                      2.244ns (1.744ns logic, 0.500ns route)
+                                       (77.7% logic, 22.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            Din1_15 (FF)
+  Destination:       SDIN1 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Din1_15 to SDIN1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  Din1_15 (Din1_15)
+     OBUF:I->O                 4.520          SDIN1_OBUF (SDIN1)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.95 secs
+ 
+--> 
+
+Total memory usage is 203328 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

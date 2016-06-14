@@ -1,0 +1,28 @@
+Command line:
+   DAsum_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51709
+
+Thu Jun 02 19:04:21 2016
+
+
+ Elaboration Time: 0.124801 sec
+
+ Current Memory Usage: 1138.25 Meg
+
+ Total Signals          : 18
+ Total Nets             : 17
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 138
+
+ Total Simulation Time: 4.07163 sec
+
+ Current Memory Usage: 823.652 Meg
+
+Thu Jun 02 22:20:33 2016
+

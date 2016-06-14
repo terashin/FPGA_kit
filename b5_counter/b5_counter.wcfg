@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/teramoto_2/Documents/works/FPGA/project/b5_counter/b5_counter_sim_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="b5_counter_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="/b5_counter_sim/Q" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">Q[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[2:0]</obj_property>
+      <obj_property name="label">Q[2:0]</obj_property>
+      <wvobject fp_name="/b5_counter_sim/Q[2]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">Q[2]</obj_property>
+         <obj_property name="label">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/b5_counter_sim/Q[1]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">Q[1]</obj_property>
+         <obj_property name="label">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/b5_counter_sim/Q[0]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">Q[0]</obj_property>
+         <obj_property name="label">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/b5_counter_sim/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+</wave_config>

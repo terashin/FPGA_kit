@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+TUE 24 MAY 23:58:4 2016
+
+drc -z b5_counter.ncd b5_counter.pcf
+
+DRC detected 0 errors and 0 warnings.

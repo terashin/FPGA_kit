@@ -1,0 +1,422 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: elect_dice.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "elect_dice.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : YES
+
+---- Target Parameters
+Output File Name                   : "elect_dice"
+Output Format                      : NGC
+Target Device                      : xc3s700a-4-fg400
+
+---- Source Options
+Top Module Name                    : elect_dice
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : True
+Equivalent register Removal        : NO
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "elect_dice.v" in library work
+Module <elect_dice> compiled
+No errors in compilation
+Analysis of file <"elect_dice.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <elect_dice> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <elect_dice>.
+	Calling function <DEC>.
+Module <elect_dice> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <elect_dice>.
+    Related source file is "elect_dice.v".
+WARNING:Xst:737 - Found 7-bit latch for signal <DICE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 3-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <elect_dice> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Latches                                              : 1
+ 7-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 3-bit up counter                                      : 1
+# Latches                                              : 1
+ 7-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <elect_dice> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block elect_dice, actual ratio is 0.
+Replicating register Q_2 to handle IOB=TRUE attribute
+Replicating register Q_1 to handle IOB=TRUE attribute
+Replicating register Q_0 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : elect_dice.ngr
+Top Level Output File Name         : elect_dice
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Soft
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 18
+#      INV                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 4
+#      LUT4                        : 9
+#      VCC                         : 1
+# FlipFlops/Latches                : 13
+#      FDRE                        : 6
+#      LDCP                        : 7
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700afg400-4 
+
+ Number of Slices:                        8  out of   5888     0%  
+ Number of Slice Flip Flops:              3  out of  11776     0%  
+ Number of 4 input LUTs:                 17  out of  11776     0%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    311     4%  
+    IOB Flip Flops:                      10
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+DICE_cmp_eq0000(DICE_cmp_eq00001:O)| NONE(*)(DICE_0)        | 7     |
+CLK                                | BUFGP                  | 6     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+DICE_0__and0000(DICE_0__and00001:O)| NONE(DICE_0)           | 2     |
+DICE_0__and0001(DICE_0__and00011:O)| NONE(DICE_0)           | 2     |
+DICE_1__and0000(DICE_1__and00001:O)| NONE(DICE_1)           | 1     |
+DICE_1__and0001(DICE_1__and00011:O)| NONE(DICE_1)           | 1     |
+DICE_2__and0000(DICE_2__and00001:O)| NONE(DICE_2)           | 1     |
+DICE_2__and0001(DICE_2__and00011:O)| NONE(DICE_2)           | 1     |
+DICE_4__and0000(DICE_4__and00001:O)| NONE(DICE_4)           | 1     |
+DICE_4__and0001(DICE_4__and00011:O)| NONE(DICE_4)           | 1     |
+DICE_5__and0000(DICE_5__and00001:O)| NONE(DICE_5)           | 1     |
+DICE_5__and0001(DICE_5__and00011:O)| NONE(DICE_5)           | 1     |
+DICE_6__and0000(DICE_6__and00001:O)| NONE(DICE_6)           | 1     |
+DICE_6__and0001(DICE_6__and00011:O)| NONE(DICE_6)           | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 3.835ns (Maximum Frequency: 260.756MHz)
+   Minimum input arrival time before clock: 4.263ns
+   Maximum output required time after clock: 5.668ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.835ns (frequency: 260.756MHz)
+  Total number of paths / destination ports: 30 / 12
+-------------------------------------------------------------------------
+Delay:               3.835ns (Levels of Logic = 1)
+  Source:            Q_2_1 (FF)
+  Destination:       Q_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Q_2_1 to Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            13   0.591   1.063  Q_2_1 (Q_2_1)
+     LUT4:I1->O            6   0.643   0.669  Q_and00001 (Q_and0000)
+     FDRE:R                    0.869          Q_0
+    ----------------------------------------
+    Total                      3.835ns (2.103ns logic, 1.732ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'DICE_cmp_eq0000'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              2.977ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       DICE_0 (LATCH)
+  Destination Clock: DICE_cmp_eq0000 falling
+
+  Data Path: RESET to DICE_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.849   1.228  RESET_IBUF (RESET_IBUF)
+     LUT2:I0->O            2   0.648   0.000  DICE_1__and00011 (DICE_1__and0001)
+     LDCP:D                    0.252          DICE_1
+    ----------------------------------------
+    Total                      2.977ns (1.749ns logic, 1.228ns route)
+                                       (58.8% logic, 41.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              4.263ns (Levels of Logic = 2)
+  Source:            RESET (PAD)
+  Destination:       Q_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to Q_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   0.849   1.228  RESET_IBUF (RESET_IBUF)
+     LUT4:I0->O            6   0.648   0.669  Q_and00001 (Q_and0000)
+     FDRE:R                    0.869          Q_0
+    ----------------------------------------
+    Total                      4.263ns (2.366ns logic, 1.897ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.531ns (Levels of Logic = 1)
+  Source:            Q_2 (FF)
+  Destination:       Q<2> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Q_2 to Q<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.420  Q_2 (Q_2)
+     OBUF:I->O                 4.520          Q_2_OBUF (Q<2>)
+    ----------------------------------------
+    Total                      5.531ns (5.111ns logic, 0.420ns route)
+                                       (92.4% logic, 7.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DICE_cmp_eq0000'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            DICE_6 (LATCH)
+  Destination:       DICE<6> (PAD)
+  Source Clock:      DICE_cmp_eq0000 falling
+
+  Data Path: DICE_6 to DICE<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.728   0.420  DICE_6 (DICE_6)
+     OBUF:I->O                 4.520          DICE_6_OBUF (DICE<6>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.69 secs
+ 
+--> 
+
+Total memory usage is 201472 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

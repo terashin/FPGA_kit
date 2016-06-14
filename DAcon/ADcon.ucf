@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "SCK" LOC = A10;
+NET "CSLD" LOC = C7;
+NET "CLK" LOC = E11;
+NET "Dout" LOC = A7;

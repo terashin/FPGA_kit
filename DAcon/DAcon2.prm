@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p bin -c FF -o C:\Users\Kishine\Documents\kenkyu\workspace\DAcon//DAcon2 -s 512 -u 0 C:/Users/Kishine/Documents/kenkyu/workspace/DAcon/adcon.bit 
+
+PROM C:\Users\Kishine\Documents\kenkyu\workspace\DAcon\DAcon2.prm map: WED 29 APR 15:56:40 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Bin
+Size          512K
+PROM start    00000000
+PROM end      0007ffff
+PROM checksum 00017d2c
+
+        Addr1        Addr2                     Date File(s)
+     00000000     00053671     Apr 29 15:54:21 2015 C:/Users/Kishine/Documents/kenkyu/workspace/DAcon/adcon.bit

@@ -1,0 +1,19 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "right" LOC = T14;
+NET "num[9]" LOC = Y11;
+NET "num[8]" LOC = W9;
+NET "num[7]" LOC = D1;
+NET "num[6]" LOC = E1;
+NET "num[5]" LOC = C1;
+NET "num[4]" LOC = D2;
+NET "num[3]" LOC = B1;
+NET "num[2]" LOC = C2;
+NET "num[1]" LOC = D4;
+NET "num[0]" LOC = D3;
+NET "CSLD" LOC = C6;
+NET "SCK" LOC = U20;
+NET "CLK" LOC = E11;
+NET "SDIN" LOC = F7;
+NET "SDOUT" LOC = A6;

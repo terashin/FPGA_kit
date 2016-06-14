@@ -1,0 +1,115 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri May 29 17:00:47 2015
+# Process ID: 4552
+# Log file: C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {count11[15]}]]
+startgroup
+set_property package_pin T14 [get_ports Light]
+endgroup
+set_property package_pin "" [get_ports [list  CSLD3]]
+startgroup
+set_property package_pin Y7 [get_ports {count11[15]}]
+endgroup
+startgroup
+set_property package_pin U9 [get_ports {count11[14]}]
+endgroup
+startgroup
+set_property package_pin Y9 [get_ports {count11[13]}]
+endgroup
+startgroup
+set_property package_pin R13 [get_ports {count11[12]}]
+endgroup
+startgroup
+set_property package_pin Y11 [get_ports {count11[11]}]
+endgroup
+startgroup
+set_property package_pin W9 [get_ports {count11[10]}]
+endgroup
+startgroup
+set_property package_pin W10 [get_ports {count11[9]}]
+endgroup
+startgroup
+set_property package_pin T13 [get_ports {count11[8]}]
+endgroup
+set_property package_pin "" [get_ports [list  {count11[7]}]]
+startgroup
+set_property package_pin T13 [get_ports {count11[8]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {count11[7]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {count11[6]}]
+endgroup
+startgroup
+set_property package_pin C1 [get_ports {count11[5]}]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports {count11[4]}]
+endgroup
+startgroup
+set_property package_pin B1 [get_ports {count11[3]}]
+endgroup
+startgroup
+set_property package_pin C2 [get_ports {count11[2]}]
+endgroup
+startgroup
+set_property package_pin D4 [get_ports {count11[1]}]
+endgroup
+startgroup
+set_property package_pin D3 [get_ports {count11[0]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin C7 [get_ports CSLD1]
+endgroup
+startgroup
+set_property package_pin B7 [get_ports CSLD2]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports CSLD3]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports SCK1]
+endgroup
+startgroup
+set_property package_pin A10 [get_ports SCK2]
+endgroup
+set_property package_pin "" [get_ports [list  SCK3]]
+startgroup
+set_property package_pin A10 [get_ports SCK2]
+endgroup
+startgroup
+set_property package_pin A2 [get_ports SCK2]
+endgroup
+startgroup
+set_property package_pin A10 [get_ports SCK1]
+endgroup
+startgroup
+set_property package_pin A18 [get_ports SCK2]
+endgroup
+startgroup
+set_property package_pin U20 [get_ports SCK3]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports SDIN1]
+endgroup
+startgroup
+set_property package_pin E7 [get_ports SDIN2]
+endgroup
+startgroup
+set_property package_pin F7 [get_ports SDIN3]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports SDOUT]
+endgroup
+save_constraints

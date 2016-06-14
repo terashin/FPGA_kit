@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 25 22:08:30 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DICE<0>" LOCATE = SITE "Y7" LEVEL 1;
+COMP "DICE<1>" LOCATE = SITE "Y9" LEVEL 1;
+COMP "DICE<2>" LOCATE = SITE "W9" LEVEL 1;
+COMP "DICE<3>" LOCATE = SITE "W10" LEVEL 1;
+COMP "DICE<4>" LOCATE = SITE "Y11" LEVEL 1;
+COMP "DICE<5>" LOCATE = SITE "U9" LEVEL 1;
+COMP "Q<0>" LOCATE = SITE "D1" LEVEL 1;
+COMP "DICE<6>" LOCATE = SITE "R13" LEVEL 1;
+COMP "Q<1>" LOCATE = SITE "E1" LEVEL 1;
+COMP "Q<2>" LOCATE = SITE "C1" LEVEL 1;
+COMP "pin" LOCATE = SITE "T14" LEVEL 1;
+COMP "CLK" LOCATE = SITE "E11" LEVEL 1;
+COMP "RESET" LOCATE = SITE "M7" LEVEL 1;
+SCHEMATIC END;
+

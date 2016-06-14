@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            05/25/2016 - 22:11
+SOURCE          C:\Users\teramoto_2\Documents\works\FPGA\project\elect_dice\elect_dice.bin
+DEVICE          8192K
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0000F4D0
+START_ADDRESS   0x00000000 END_ADDRESS 0x00053671 DIRECTION_UP   "C:/Users/teramoto_2/Documents/works/FPGA/project/elect_dice/elect_dice.bit" 3s700afg400

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed Jun 01 12:38:02 2016
+# Process ID: 7784
+# Log file: C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/teramoto_2/Documents/works/FPGA/project/b4_strg/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

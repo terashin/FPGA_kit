@@ -1,0 +1,12 @@
+xst -intstyle ise -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -ifn "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/DA_AD.xst" -ofn "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/DA_AD.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc DA_AD.ucf -p xc3s700a-fg400-4 DA_AD.ngc DA_AD.ngd  
+map -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o DA_AD_map.ncd DA_AD.ngd DA_AD.pcf 
+par -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 DA_AD_map.ncd DA_AD.ncd DA_AD.pcf 
+trce -filter C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml DA_AD.twx DA_AD.ncd -o DA_AD.twr DA_AD.pcf -ucf DA_AD.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f DA_AD.ut DA_AD.ncd 
+xst -intstyle ise -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -ifn "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/DA_AD.xst" -ofn "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/DA_AD.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc DA_AD.ucf -p xc3s700a-fg400-4 DA_AD.ngc DA_AD.ngd  
+map -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg400-4 -cm speed -ir off -pr b -c 100 -o DA_AD_map.ncd DA_AD.ngd DA_AD.pcf 
+par -filter "C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter" -w -intstyle ise -pl std -rl std -t 1 DA_AD_map.ncd DA_AD.ncd DA_AD.pcf 
+trce -filter C:/Users/Kishine/Documents/kenkyu/workspace/DA_AD/iseconfig/filter.filter -intstyle ise -e 3 -s 4 -n 0 -xml DA_AD.twx DA_AD.ncd -o DA_AD.twr DA_AD.pcf -ucf DA_AD.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f DA_AD.ut DA_AD.ncd 

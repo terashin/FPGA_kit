@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Wed May 25 02:46:27 2016
+# Process ID: 4624
+# Log file: C:/Users/teramoto_2/Documents/works/FPGA/project/elect_dice/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/teramoto_2/Documents/works/FPGA/project/elect_dice/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/teramoto_2/Documents/works/FPGA/project/elect_dice/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  {DICE[0]}]]
+startgroup
+set_property package_pin Y7 [get_ports {DICE[0]}]
+endgroup
+startgroup
+set_property package_pin Y9 [get_ports {DICE[1]}]
+endgroup
+set_property package_pin "" [get_ports [list  {DICE[3]}]]
+startgroup
+set_property package_pin W9 [get_ports {DICE[2]}]
+endgroup
+startgroup
+set_property package_pin W10 [get_ports {DICE[3]}]
+endgroup
+startgroup
+set_property package_pin Y11 [get_ports {DICE[4]}]
+endgroup
+startgroup
+set_property package_pin U9 [get_ports {DICE[5]}]
+endgroup
+startgroup
+set_property package_pin R13 [get_ports {DICE[6]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {Q[0]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {Q[1]}]
+endgroup
+startgroup
+set_property package_pin C1 [get_ports {Q[2]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin M7 [get_ports RESET]
+endgroup
+save_constraints

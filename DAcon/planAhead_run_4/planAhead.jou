@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Apr 28 10:28:55 2015
+# Process ID: 5228
+# Log file: C:/Users/Kishine/Documents/kenkyu/workspace/DAcon/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Kishine/Documents/kenkyu/workspace/DAcon/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Kishine/Documents/kenkyu/workspace/DAcon/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

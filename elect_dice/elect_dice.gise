@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="elect_dice.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="elect_dice.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="elect_dice.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="elect_dice.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="elect_dice.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="elect_dice.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IBS" xil_pn:name="elect_dice.ibs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PIN2UCF_REPORT" xil_pn:name="elect_dice.lck"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="elect_dice.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="elect_dice.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="elect_dice.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="elect_dice.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="elect_dice.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="elect_dice.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="elect_dice.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="elect_dice.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="elect_dice.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IMPACT_MISC" xil_pn:name="elect_dice.prm"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="elect_dice.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="elect_dice.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="elect_dice.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="elect_dice.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="elect_dice.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="elect_dice.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="elect_dice.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="elect_dice.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="elect_dice.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="elect_dice_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="elect_dice_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="elect_dice_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="elect_dice_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="elect_dice_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="elect_dice_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="elect_dice_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="elect_dice_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="elect_dice_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="elect_dice_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="elect_dice_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="elect_dice_sim_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="elect_dice_sim_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="elect_dice_sim_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="elect_dice_sim_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="elect_dice_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="elect_dice_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="elect_dice_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="elect_dice_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/elect_dice_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/elect_dice_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/par/elect_dice_timesim.vhd"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1464111846" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="6722788503651541364" xil_pn:start_ts="1464111846">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464116017" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1464116017">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464177520" xil_pn:in_ck="-783355908520171086" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1464177520">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice.v"/>
+      <outfile xil_pn:name="elect_dice_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1464116017" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6510612407408379488" xil_pn:start_ts="1464116017">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464116017" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2681857790804289512" xil_pn:start_ts="1464116017">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464116017" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4168100168142263641" xil_pn:start_ts="1464116017">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464178154" xil_pn:in_ck="-783355908520171086" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1464178154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice.v"/>
+      <outfile xil_pn:name="elect_dice_sim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1464178247" xil_pn:in_ck="-783355908520171086" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3622594649485688333" xil_pn:start_ts="1464178154">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice_sim_beh.prj"/>
+      <outfile xil_pn:name="elect_dice_sim_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1464179310" xil_pn:in_ck="7014568171995628216" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2368825224974136576" xil_pn:start_ts="1464179309">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice_sim_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7034307858843039008" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4168100168142263641" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6194104810015772232" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4579864356909105255" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464180268" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1042940989794476829" xil_pn:start_ts="1464180268">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181691" xil_pn:in_ck="5274995153143344901" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-765120941606175570" xil_pn:start_ts="1464181684">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.lso"/>
+      <outfile xil_pn:name="elect_dice.ngc"/>
+      <outfile xil_pn:name="elect_dice.ngr"/>
+      <outfile xil_pn:name="elect_dice.prj"/>
+      <outfile xil_pn:name="elect_dice.stx"/>
+      <outfile xil_pn:name="elect_dice.syr"/>
+      <outfile xil_pn:name="elect_dice.xst"/>
+      <outfile xil_pn:name="elect_dice_sim_beh.prj"/>
+      <outfile xil_pn:name="elect_dice_sim_stx_beh.prj"/>
+      <outfile xil_pn:name="elect_dice_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1464176488" xil_pn:in_ck="7532314849432046893" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767289401790746211" xil_pn:start_ts="1464176487">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181707" xil_pn:in_ck="-3483106428913040044" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8693173243592395174" xil_pn:start_ts="1464181701">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.bld"/>
+      <outfile xil_pn:name="elect_dice.ngd"/>
+      <outfile xil_pn:name="elect_dice_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181712" xil_pn:in_ck="5067656131351524117" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-7410414435433027546" xil_pn:start_ts="1464181707">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.pcf"/>
+      <outfile xil_pn:name="elect_dice_map.map"/>
+      <outfile xil_pn:name="elect_dice_map.mrp"/>
+      <outfile xil_pn:name="elect_dice_map.ncd"/>
+      <outfile xil_pn:name="elect_dice_map.ngm"/>
+      <outfile xil_pn:name="elect_dice_map.xrpt"/>
+      <outfile xil_pn:name="elect_dice_summary.xml"/>
+      <outfile xil_pn:name="elect_dice_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181733" xil_pn:in_ck="1649209369873070446" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5764071517887183578" xil_pn:start_ts="1464181712">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.ncd"/>
+      <outfile xil_pn:name="elect_dice.pad"/>
+      <outfile xil_pn:name="elect_dice.par"/>
+      <outfile xil_pn:name="elect_dice.ptwx"/>
+      <outfile xil_pn:name="elect_dice.unroutes"/>
+      <outfile xil_pn:name="elect_dice.xpi"/>
+      <outfile xil_pn:name="elect_dice_pad.csv"/>
+      <outfile xil_pn:name="elect_dice_pad.txt"/>
+      <outfile xil_pn:name="elect_dice_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181759" xil_pn:in_ck="7532314849432039268" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="8464595424278280623" xil_pn:start_ts="1464181747">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.bgn"/>
+      <outfile xil_pn:name="elect_dice.bit"/>
+      <outfile xil_pn:name="elect_dice.drc"/>
+      <outfile xil_pn:name="elect_dice.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181765" xil_pn:in_ck="7532314849432026414" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="3725548802311211136" xil_pn:start_ts="1464181763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice.prm"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181769" xil_pn:in_ck="7532314849432026414" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="7115266323808781642" xil_pn:start_ts="1464181768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="elect_dice.prm"/>
+    </transform>
+    <transform xil_pn:end_ts="1464113472" xil_pn:in_ck="1618386672711703441" xil_pn:name="TRAN_backAnnoPinLocations" xil_pn:prop_ck="7532314849432046893" xil_pn:start_ts="1464113469">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="elect_dice.lck"/>
+    </transform>
+    <transform xil_pn:end_ts="1464113375" xil_pn:in_ck="7532314849432039268" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="2881493872750759567" xil_pn:start_ts="1464113368">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/elect_dice_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/elect_dice_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/elect_dice_timesim.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1464113467" xil_pn:in_ck="7532314849432039268" xil_pn:name="TRAN_createIBISModel" xil_pn:prop_ck="-6833317251490346154" xil_pn:start_ts="1464113462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="elect_dice.ibs"/>
+    </transform>
+    <transform xil_pn:end_ts="1464113546" xil_pn:in_ck="7532314849432039268" xil_pn:name="TRAN_genPowerData" xil_pn:prop_ck="5490861046259921698" xil_pn:start_ts="1464113499">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1464181733" xil_pn:in_ck="1618386672711703441" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-7836983387856768746" xil_pn:start_ts="1464181728">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="elect_dice.twr"/>
+      <outfile xil_pn:name="elect_dice.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

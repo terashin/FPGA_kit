@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p bin -c FF -o C:\Users\Kishine\Documents\kenkyu\workspace\ADcon//ADcon -s 512 -u 0 C:/Users/Kishine/Documents/kenkyu/workspace/ADcon/adcon.bit 
+
+PROM C:\Users\Kishine\Documents\kenkyu\workspace\ADcon\ADcon.prm map: FRI 1 MAY 18:40:4 2015
+
+Calculating PROM checksum with fill value ff
+
+Format        Bin
+Size          512K
+PROM start    00000000
+PROM end      0007ffff
+PROM checksum 00017a63
+
+        Addr1        Addr2                     Date File(s)
+     00000000     00053671     May 01 18:39:04 2015 C:/Users/Kishine/Documents/kenkyu/workspace/ADcon/adcon.bit
